@@ -1,0 +1,19 @@
+Label	Weight	Text
+l_	1	welke leerkracht geeft het vak wiskunde
+l_	1	hoeveel moet ik betalen
+l_	1	wie geeft het vak wiskunde
+l_	1	studiekosten
+l_	1	hoeveel is het inschrijvingsgeld
+l_	1	docent wiskunde
+l_	1	hoeveel ga ik moeten studeren voor wiskunde
+l_	1	wat is de studieomvang van probleemoplossend denken 1
+l_	1	hoeveel studiepunten heeft het vak analyse i
+l_	1	gewicht analyse 1
+l_	1	hoeveel moet ik voor de opleiding betalen
+l_	1	welke docent krijg ik voor het vak wiskunde
+l_	1	hoeveel uren heb ik nodig om het analyse1 te begrijpen
+l_	1	wat is het gewicht van analyse1
+l_	1	hoeveel kost de opleiding
+l_	1	hoeveel bedraagt het inschrijvingsgeld
+l_	1	kan ik wiskunde studeren op 10 uur
+l_	1	hoeveel tijd moet ik voorzien voor wiskunde

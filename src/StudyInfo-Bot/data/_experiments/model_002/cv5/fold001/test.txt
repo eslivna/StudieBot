@@ -1,0 +1,11 @@
+Label	Weight	Text
+l_	1,8	docent wiskunde
+l_	1,8	hoeveel ga ik moeten studeren voor wiskunde
+l_	1,8	wat is de studieomvang van probleemoplossend denken 1
+l_	1,8	hoeveel studiepunten heeft het vak analyse i
+l_	1,8	gewicht analyse 1
+l_	1,8	docent wiskunde
+l_	1,8	hoeveel ga ik moeten studeren voor wiskunde
+l_	1,8	wat is de studieomvang van probleemoplossend denken 1
+l_	1,8	hoeveel studiepunten heeft het vak analyse i
+l_	1,8	gewicht analyse 1

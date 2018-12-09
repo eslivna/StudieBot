@@ -1,0 +1,11 @@
+Label	Weight	Text
+l_	1,8	wat is het gewicht van analyse1
+l_	1,8	hoeveel kost de opleiding
+l_	1,8	hoeveel bedraagt het inschrijvingsgeld
+l_	1,8	kan ik wiskunde studeren op 10 uur
+l_	1,8	hoeveel tijd moet ik voorzien voor wiskunde
+l_	1,8	wat is het gewicht van analyse1
+l_	1,8	hoeveel kost de opleiding
+l_	1,8	hoeveel bedraagt het inschrijvingsgeld
+l_	1,8	kan ik wiskunde studeren op 10 uur
+l_	1,8	hoeveel tijd moet ik voorzien voor wiskunde

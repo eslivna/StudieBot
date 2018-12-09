@@ -1,0 +1,11 @@
+Label	Weight	Text
+l_	1,8	hoeveel tijd moet ik studeren voor wiskunde
+l_	1,8	studiepunten computerarchitectuur
+l_	1,8	wat zijn de studiekosten
+l_	1,8	hoelang moet ik studeren voor analyse 1
+l_	1,8	gewicht wiskunde
+l_	1,8	hoeveel tijd moet ik studeren voor wiskunde
+l_	1,8	studiepunten computerarchitectuur
+l_	1,8	wat zijn de studiekosten
+l_	1,8	hoelang moet ik studeren voor analyse 1
+l_	1,8	gewicht wiskunde

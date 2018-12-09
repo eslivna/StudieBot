@@ -1,0 +1,209 @@
+{
+  "luis_schema_version": "3.1.0",
+  "versionId": "0.1",
+  "name": "Training Courses",
+  "desc": "",
+  "culture": "nl-nl",
+  "intents": [
+    {
+      "name": "Get Name Teacher"
+    },
+    {
+      "name": "Get Number Of Credits"
+    },
+    {
+      "name": "Get Study Time"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "Courses",
+      "subLists": [
+        {
+          "canonicalForm": "Computerarchitectuur",
+          "list": []
+        },
+        {
+          "canonicalForm": "Computernetwerken I",
+          "list": [
+            "computernetwerken 1"
+          ]
+        },
+        {
+          "canonicalForm": "OO Programmeren I",
+          "list": [
+            "programmeren 1"
+          ]
+        },
+        {
+          "canonicalForm": "Analyse I",
+          "list": [
+            "analyse 1",
+            "analyse1"
+          ]
+        },
+        {
+          "canonicalForm": "OO Ontwerpen I",
+          "list": [
+            "ontwerpen 1"
+          ]
+        },
+        {
+          "canonicalForm": "Databanken I",
+          "list": [
+            "databanken 1"
+          ]
+        },
+        {
+          "canonicalForm": "Webapplicaites I",
+          "list": [
+            "webapplicaties 1"
+          ]
+        },
+        {
+          "canonicalForm": "Partim Financieel Management",
+          "list": []
+        },
+        {
+          "canonicalForm": "Partim Strategisch Management",
+          "list": []
+        },
+        {
+          "canonicalForm": "Math4IT",
+          "list": [
+            "Wiskunde"
+          ]
+        },
+        {
+          "canonicalForm": "Probleemoplossend denken I",
+          "list": [
+            "Probleemoplossend denken 1"
+          ]
+        },
+        {
+          "canonicalForm": "Internationale Communicatie I",
+          "list": [
+            "Internationale Communicatie 1"
+          ]
+        },
+        {
+          "canonicalForm": "I1Talent",
+          "list": []
+        },
+        {
+          "canonicalForm": "Projecten-workshops I",
+          "list": [
+            "Projecten-workshops 1"
+          ]
+        },
+        {
+          "canonicalForm": "OO Programmeren II",
+          "list": [
+            "OO Programmeren 2"
+          ]
+        },
+        {
+          "canonicalForm": "Webapplicaties II",
+          "list": [
+            "Webapplicaties 2"
+          ]
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "docent wiskunde",
+      "intent": "Get Name Teacher",
+      "entities": []
+    },
+    {
+      "text": "gewicht analyse 1",
+      "intent": "Get Number Of Credits",
+      "entities": []
+    },
+    {
+      "text": "gewicht wiskunde",
+      "intent": "Get Number Of Credits",
+      "entities": []
+    },
+    {
+      "text": "hoelang moet ik studeren voor analyse 1",
+      "intent": "Get Study Time",
+      "entities": []
+    },
+    {
+      "text": "hoeveel ga ik moeten studeren voor wiskunde ?",
+      "intent": "Get Study Time",
+      "entities": []
+    },
+    {
+      "text": "hoeveel studiepunten heeft het vak analyse i ?",
+      "intent": "Get Number Of Credits",
+      "entities": []
+    },
+    {
+      "text": "hoeveel tijd moet ik studeren voor wiskunde",
+      "intent": "Get Study Time",
+      "entities": []
+    },
+    {
+      "text": "hoeveel tijd moet ik voorzien voor wiskunde ?",
+      "intent": "Get Study Time",
+      "entities": []
+    },
+    {
+      "text": "hoeveel uren heb ik nodig om het analyse1 te begrijpen",
+      "intent": "Get Study Time",
+      "entities": []
+    },
+    {
+      "text": "kan ik wiskunde studeren op 10 uur ?",
+      "intent": "Get Study Time",
+      "entities": []
+    },
+    {
+      "text": "studiepunten computerarchitectuur?",
+      "intent": "Get Number Of Credits",
+      "entities": []
+    },
+    {
+      "text": "wat is de studieomvang van probleemoplossend denken 1?",
+      "intent": "Get Number Of Credits",
+      "entities": []
+    },
+    {
+      "text": "wat is het gewicht van analyse1",
+      "intent": "Get Number Of Credits",
+      "entities": []
+    },
+    {
+      "text": "welke docent krijg ik voor het vak wiskunde ?",
+      "intent": "Get Name Teacher",
+      "entities": []
+    },
+    {
+      "text": "welke leerkracht geeft het vak wiskunde ?",
+      "intent": "Get Name Teacher",
+      "entities": []
+    },
+    {
+      "text": "wie geeft het vak wiskunde ?",
+      "intent": "Get Name Teacher",
+      "entities": []
+    }
+  ],
+  "settings": []
+}

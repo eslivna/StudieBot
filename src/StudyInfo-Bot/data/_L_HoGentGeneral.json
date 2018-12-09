@@ -1,0 +1,62 @@
+{
+  "luis_schema_version": "3.1.0",
+  "versionId": "0.1",
+  "name": "HoGentGeneral",
+  "desc": "General Understand of HoGent",
+  "culture": "nl-nl",
+  "intents": [
+    {
+      "name": "Get Enrolment Fee"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "hoeveel bedraagt het inschrijvingsgeld?",
+      "intent": "Get Enrolment Fee",
+      "entities": []
+    },
+    {
+      "text": "hoeveel is het inschrijvingsgeld?",
+      "intent": "Get Enrolment Fee",
+      "entities": []
+    },
+    {
+      "text": "hoeveel kost de opleiding?",
+      "intent": "Get Enrolment Fee",
+      "entities": []
+    },
+    {
+      "text": "hoeveel moet ik betalen ?",
+      "intent": "Get Enrolment Fee",
+      "entities": []
+    },
+    {
+      "text": "hoeveel moet ik voor de opleiding betalen ?",
+      "intent": "Get Enrolment Fee",
+      "entities": []
+    },
+    {
+      "text": "studiekosten ?",
+      "intent": "Get Enrolment Fee",
+      "entities": []
+    },
+    {
+      "text": "wat zijn de studiekosten ?",
+      "intent": "Get Enrolment Fee",
+      "entities": []
+    }
+  ],
+  "settings": []
+}

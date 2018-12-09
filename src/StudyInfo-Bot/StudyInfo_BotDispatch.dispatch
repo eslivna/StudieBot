@@ -1,0 +1,36 @@
+{
+  "authoringRegion": "westus",
+  "hierarchical": true,
+  "services": [
+    {
+      "appId": "ba990593-9f77-4104-a363-6de90a28471d",
+      "authoringKey": "c5f8a86e8def40b2b10f03abcf80318f",
+      "subscriptionKey": "",
+      "version": "0.1",
+      "region": "westus",
+      "type": "luis",
+      "name": "HoGentGeneral",
+      "id": "7"
+    },
+    {
+      "appId": "154eb773-4917-4fac-ad5c-55f3c418ec50",
+      "authoringKey": "c5f8a86e8def40b2b10f03abcf80318f",
+      "subscriptionKey": "",
+      "version": "0.1",
+      "region": "westus",
+      "type": "luis",
+      "name": "Training Courses",
+      "id": "50"
+    }
+  ],
+  "serviceIds": [
+    "1",
+    "2"
+  ],
+  "appId": "5871f63b-5e71-4aac-8d33-0b3aa6cb0018",
+  "authoringKey": "c5f8a86e8def40b2b10f03abcf80318f",
+  "version": "Dispatch",
+  "region": "westus",
+  "type": "dispatch",
+  "name": "StudyInfo_BotDispatch"
+}

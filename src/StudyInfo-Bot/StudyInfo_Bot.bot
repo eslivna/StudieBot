@@ -1,0 +1,48 @@
+{
+    "name": "StudyInfo_Bot",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "name": "development",
+            "endpoint": "http://localhost:3978/api/messages",
+            "appId": "",
+            "appPassword": "",
+            "id": "1"
+        },
+        {
+            "type": "luis",
+            "name": "HoGentGeneral",
+            "appId": "ba990593-9f77-4104-a363-6de90a28471d",
+            "authoringKey": "c5f8a86e8def40b2b10f03abcf80318f",
+            "subscriptionKey": "",
+            "version": "0.1",
+            "region": "westus",
+            "id": "7"
+        },
+        {
+            "type": "luis",
+            "name": "Training Courses",
+            "appId": "154eb773-4917-4fac-ad5c-55f3c418ec50",
+            "authoringKey": "c5f8a86e8def40b2b10f03abcf80318f",
+            "subscriptionKey": "",
+            "version": "0.1",
+            "region": "westus",
+            "id": "50"
+        },
+        {
+            "type": "dispatch",
+            "name": "StudyInfo_BotDispatch",
+            "appId": "5871f63b-5e71-4aac-8d33-0b3aa6cb0018",
+            "authoringKey": "c5f8a86e8def40b2b10f03abcf80318f",
+            "version": "Dispatch",
+            "region": "westus",
+            "serviceIds": [
+                "1"
+            ],
+            "id": "42"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0"
+}

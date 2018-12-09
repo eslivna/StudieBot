@@ -1,0 +1,11 @@
+Label	Weight	Text
+l_	1,8	hoeveel moet ik voor de opleiding betalen
+l_	1,8	gewicht wiskunde
+l_	1,8	wat is het gewicht van analyse1
+l_	1,8	hoeveel kost de opleiding
+l_	1,8	hoeveel uren heb ik nodig om het analyse1 te begrijpen
+l_	1,8	hoeveel moet ik voor de opleiding betalen
+l_	1,8	gewicht wiskunde
+l_	1,8	wat is het gewicht van analyse1
+l_	1,8	hoeveel kost de opleiding
+l_	1,8	hoeveel uren heb ik nodig om het analyse1 te begrijpen
