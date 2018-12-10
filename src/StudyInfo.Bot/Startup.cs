@@ -14,6 +14,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using StudyInfo.Bot.StudyInfo;
+using StudyInfo.Logic.Data;
 using StudyInfo.Logic.Infrastructure;
 
 namespace StudyInfo_Bot
@@ -81,6 +82,8 @@ namespace StudyInfo_Bot
             var connectedServices = InitBotServices(botConfig);
 
             services.AddSingleton(sp => connectedServices);
+
+            services.AddTransient<IDatabaseService, DatabaseService>();
 
             services.AddBot<StudyInfoBot>(options =>
             {

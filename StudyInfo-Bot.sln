@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudyInfo.Bot", "src\StudyInfo-Bot\StudyInfo.Bot.csproj", "{267D607E-E091-45AF-8BFC-EC35BE47794B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudyInfo.Bot", "src\StudyInfo.Bot\StudyInfo.Bot.csproj", "{267D607E-E091-45AF-8BFC-EC35BE47794B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudyInfo.Logic", "src\StudyInfo.Logic\StudyInfo.Logic.csproj", "{92F868D2-23D0-446A-B53A-07F21951816C}"
 EndProject

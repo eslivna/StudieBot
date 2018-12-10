@@ -21,12 +21,12 @@ namespace StudyInfo.Logic.Data
             return storageAccount.CreateCloudTableClient().GetTableReference(Constants.TableName);
         }
 
-        public async Task<T> Get<T>(string id) where T : ITableEntity, new()
+        public async Task<T> Get<T>(string rowKey) where T : ITableEntity, new()
         {
             try
             {
                 var table = GetTable();
-                var retrieveOperation = TableOperation.Retrieve<T>(typeof(T).Name, id);
+                var retrieveOperation = TableOperation.Retrieve<T>(typeof(T).Name, rowKey);
                 var retrievedResult = await table.ExecuteAsync(retrieveOperation);
                 return (T)retrievedResult.Result;
             }

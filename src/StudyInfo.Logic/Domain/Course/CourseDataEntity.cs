@@ -1,6 +1,6 @@
 ﻿using Microsoft.WindowsAzure.Storage.Table;
 
-namespace StudyInfo.Logic.Data.Domain
+namespace StudyInfo.Logic.Data.Domain.Course
 {
     /// <summary>
     /// The ImageDataEntity class

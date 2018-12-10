@@ -1,15 +1,16 @@
 ﻿using System.Collections.Generic;
 using Microsoft.Bot.Builder;
 using Newtonsoft.Json;
+using StudyInfo.Logic.Data.Domain.Course;
 
-namespace StudyInfo.Bot.Models
+namespace StudyInfo.Bot.Domain.Course
 {
     public class CourseRecognizerConvert : IRecognizerConvert
     {
         public string Text { get; set; }
         public string AlteredText { get; set; }
 
-        public Dictionary<string, IntentScore> Intents { get; set; }
+        public Dictionary<IntentType, IntentScore> Intents { get; set; }
 
         public _Entities Entities { get; set; }
 

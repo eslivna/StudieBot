@@ -4,63 +4,44 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Schema;
-using StudyInfo.Bot.Models;
-using Entity = StudyInfo.Bot.Models.Entity;
+using StudyInfo.Bot.Constants;
+using StudyInfo.Bot.Domain.Course;
+using StudyInfo.Logic.Data;
+using StudyInfo.Logic.Data.Domain.Course;
+using StudyInfo.Logic.Data.Domain.Luis;
 
 namespace StudyInfo.Bot.StudyInfo
 {
     public class StudyInfoBot : IBot
-    {
-
-        private const string WelcomeText = "Hi, welkom bij deze bot";
-
-        /// <summary>
-        /// Key in the Bot config (.bot file) for the Home Automation Luis instance.
-        /// </summary>
-        private const string HoGentGeneralLuisKey = "HoGentGeneral";
-
-        /// <summary>
-        /// Key in the Bot config (.bot file) for the Training Courses Luis instance.
-        /// </summary>
-        private const string TrainingCourses = "Training Courses";
-
-        /// <summary>
-        /// Key in the Bot config (.bot file) for the Dispatch.
-        /// </summary>
-        private const string DispatchKey = "StudyInfo_BotDispatch";
-
-        /// <summary>
-        /// Key in the Bot config (.bot file) for the QnaMaker instance.
-        /// In the .bot file, multiple instances of QnaMaker can be configured.
-        /// </summary>
-       // private const string QnAMakerKey = "sample-qna";
-
+    {   
         /// <summary>
         /// Services configured from the ".bot" file.
         /// </summary>
         private readonly BotServices _services;
+        private IDatabaseService _dbService;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="NlpDispatchBot"/> class.
         /// </summary>
         /// <param name="services">Services configured from the ".bot" file.</param>
-        public StudyInfoBot(BotServices services)
+        public StudyInfoBot(BotServices services, IDatabaseService databaseService)
         {
-            _services = services ?? throw new System.ArgumentNullException(nameof(services));
+            _services = services ?? throw new ArgumentNullException(nameof(services));
+            _dbService = databaseService ?? throw new ArgumentNullException(nameof(databaseService));
 
             //if (!_services.QnAServices.ContainsKey(QnAMakerKey))
             //{
             //    throw new System.ArgumentException($"Invalid configuration. Please check your '.bot' file for a QnA service named '{DispatchKey}'.");
             //}
 
-            if (!_services.LuisServices.ContainsKey(HoGentGeneralLuisKey))
+            if (!_services.LuisServices.ContainsKey(LuisKeyFor.HoGentGeneral))
             {
-                throw new System.ArgumentException($"Invalid configuration. Please check your '.bot' file for a Luis service named '{HoGentGeneralLuisKey}'.");
+                throw new ArgumentException($"Invalid configuration. Please check your '.bot' file for a Luis service named '{LuisKeyFor.HoGentGeneral}'.");
             }
 
-            if (!_services.LuisServices.ContainsKey(TrainingCourses))
+            if (!_services.LuisServices.ContainsKey(LuisKeyFor.TrainingCourses))
             {
-                throw new System.ArgumentException($"Invalid configuration. Please check your '.bot' file for a Luis service named '{TrainingCourses}'.");
+                throw new ArgumentException($"Invalid configuration. Please check your '.bot' file for a Luis service named '{LuisKeyFor.TrainingCourses}'.");
             }
         }
 
@@ -79,7 +60,7 @@ namespace StudyInfo.Bot.StudyInfo
             if (turnContext.Activity.Type == ActivityTypes.Message && !turnContext.Responded)
             {
                 // Get the intent recognition result
-                var recognizerResult = await _services.LuisServices[DispatchKey].RecognizeAsync(turnContext, cancellationToken);
+                var recognizerResult = await _services.LuisServices[LuisKeyFor.Dispatch].RecognizeAsync(turnContext, cancellationToken);
                 var topIntent = recognizerResult?.GetTopScoringIntent();
 
                 if (topIntent == null)
@@ -119,9 +100,7 @@ namespace StudyInfo.Bot.StudyInfo
             {
                 if (member.Id != turnContext.Activity.Recipient.Id)
                 {
-                    await turnContext.SendActivityAsync(
-                        $"Welcome to Dispatch bot {member.Name}. {WelcomeText}",
-                        cancellationToken: cancellationToken);
+                    await turnContext.SendActivityAsync($"Welcome to StudyInfo bot {member.Name}.",cancellationToken: cancellationToken);
                 }
             }
         }
@@ -131,26 +110,25 @@ namespace StudyInfo.Bot.StudyInfo
         /// </summary>
         private async Task DispatchToTopIntentAsync(ITurnContext context, (string intent, double score)? topIntent, CancellationToken cancellationToken = default(CancellationToken))
         {
-            const string hoGentGeneralnDispatchKey = "l_HoGentGeneral";
-            const string trainingCoursesDispatchKey = "l_Training_Courses";
-            const string noneDispatchKey = "None";
             //const string qnaDispatchKey = "q_sample-qna";
 
             switch (topIntent.Value.intent)
             {
-                case hoGentGeneralnDispatchKey:
-                    var result = await _services.LuisServices[HoGentGeneralLuisKey].RecognizeAsync(context, cancellationToken);
+                case DispatchKeyFor.HoGentGeneral:
+                    var response = await DispatchToLuisModelAsync(context, LuisKeyFor.HoGentGeneral);
+
+                    var data = await _dbService.Get<CourseDataEntity>(response.Entity.Value);
 
                     // Here, you can add code for calling the hypothetical home automation service, passing in any entity information that you need
                     break;
-                case trainingCoursesDispatchKey:
-                    var response = await DispatchToLuisModelAsync(context, TrainingCourses);
+                case DispatchKeyFor.TrainingCourses:
+                    var result = await DispatchToLuisModelAsync(context, LuisKeyFor.TrainingCourses);
 
 
                     // Here, you can add code for calling the hypothetical weather service,
                     // passing in any entity information that you need
                     break;
-                case noneDispatchKey:
+                case DispatchKeyFor.None:
                     // You can provide logic here to handle the known None intent (none of the above).
                     // In this example we fall through to the QnA intent.
                     //case qnaDispatchKey:
@@ -190,16 +168,10 @@ namespace StudyInfo.Bot.StudyInfo
         {
             var result = await _services.LuisServices[appName].RecognizeAsync<CourseRecognizerConvert>(context, cancellationToken);
 
-            var entity = new Entity() { Type = result.Entities.Instance.Courses.FirstOrDefault().Type, Value = result.Entities.Courses[0][0] };
+            var entity = new Logic.Data.Domain.Luis.Entity() { Type = result.Entities.Instance.Courses.FirstOrDefault().Type, Value = result.Entities.Courses[0][0] };
             var intent = result.Intents.FirstOrDefault().Key;
-
-
             return new LuisResult() { Entity = entity, Intent = intent };
         }
-        //if (result.Entities.Count > 0)
-        //{
-        //    await context.SendActivityAsync($"The following entities were found in the message:\n\n{string.Join("\n\n", result.Entities)}");
-        //}
     }
 }
 

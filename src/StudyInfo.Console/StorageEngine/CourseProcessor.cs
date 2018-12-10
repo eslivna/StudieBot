@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using StudyInfo.Logic.Data;
-using StudyInfo.Logic.Data.Domain;
+using StudyInfo.Logic.Data.Domain.Course;
 
-namespace StudyInfo.ConsoleApp.SampleData
+namespace StudyInfo.ConsoleApp.StorageEngine
 {
     public class CourseProcessor : IDataProcessor
     {

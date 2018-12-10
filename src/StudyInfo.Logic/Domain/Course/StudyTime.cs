@@ -1,4 +1,4 @@
-﻿namespace StudyInfo.Logic.Data.Domain
+﻿namespace StudyInfo.Logic.Data.Domain.Course
 {
     public class StudyTime
     {

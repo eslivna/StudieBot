@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
-using StudyInfo.Logic.Data.Domain;
+using StudyInfo.Logic.Data.Domain.Course;
 
 namespace StudyInfo.ConsoleApp.SampleData
 {
