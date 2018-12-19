@@ -1,0 +1,23 @@
+Label	Weight	Text
+l_HoGentGeneral	1,3	studiekosten
+l_HoGentGeneral	1,3	studiekosten
+l_HoGentGeneral	1,3	studiekosten
+l_HoGentGeneral	1,3	studiekosten
+l_HoGentGeneral	1,3	studiekosten
+l_HoGentGeneral	1,3	studiekosten
+l_HoGentGeneral	1,3	studiekosten
+l_HoGentGeneral	1,3	studiekosten
+l_HoGentGeneral	1,3	studiekosten
+l_HoGentGeneral	1,3	studiekosten
+l_Training Courses	1,083333	kan ik wiskunde studeren op 10 uur
+l_Training Courses	1,083333	gewicht wiskunde
+l_Training Courses	1,083333	wie geeft het vak wiskunde
+l_Training Courses	1,083333	kan ik wiskunde studeren op 10 uur
+l_Training Courses	1,083333	gewicht wiskunde
+l_Training Courses	1,083333	wie geeft het vak wiskunde
+l_Training Courses	1,083333	kan ik wiskunde studeren op 10 uur
+l_Training Courses	1,083333	gewicht wiskunde
+l_Training Courses	1,083333	wie geeft het vak wiskunde
+l_Training Courses	1,083333	kan ik wiskunde studeren op 10 uur
+l_Training Courses	1,083333	gewicht wiskunde
+l_Training Courses	1,083333	wie geeft het vak wiskunde

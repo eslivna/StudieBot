@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -6,6 +7,7 @@ using Microsoft.Bot.Builder;
 using Microsoft.Bot.Schema;
 using StudyInfo.Bot.Constants;
 using StudyInfo.Bot.Domain.Course;
+using StudyInfo.Bot.Helper;
 using StudyInfo.Logic.Data;
 using StudyInfo.Logic.Data.Domain.Course;
 using StudyInfo.Logic.Data.Domain.Luis;
@@ -13,7 +15,7 @@ using StudyInfo.Logic.Data.Domain.Luis;
 namespace StudyInfo.Bot.StudyInfo
 {
     public class StudyInfoBot : IBot
-    {   
+    {
         /// <summary>
         /// Services configured from the ".bot" file.
         /// </summary>
@@ -62,7 +64,7 @@ namespace StudyInfo.Bot.StudyInfo
                 // Get the intent recognition result
                 var recognizerResult = await _services.LuisServices[LuisKeyFor.Dispatch].RecognizeAsync(turnContext, cancellationToken);
                 var topIntent = recognizerResult?.GetTopScoringIntent();
-
+                turnContext.Activity.Text = recognizerResult.AlteredText ?? turnContext.Activity.Text;
                 if (topIntent == null)
                 {
                     await turnContext.SendActivityAsync("Unable to get the top intent.");
@@ -100,7 +102,7 @@ namespace StudyInfo.Bot.StudyInfo
             {
                 if (member.Id != turnContext.Activity.Recipient.Id)
                 {
-                    await turnContext.SendActivityAsync($"Welcome to StudyInfo bot {member.Name}.",cancellationToken: cancellationToken);
+                    await turnContext.SendActivityAsync($"Welcome to StudyInfo bot {member.Name}.", cancellationToken: cancellationToken);
                 }
             }
         }
@@ -115,18 +117,25 @@ namespace StudyInfo.Bot.StudyInfo
             switch (topIntent.Value.intent)
             {
                 case DispatchKeyFor.HoGentGeneral:
-                    var response = await DispatchToLuisModelAsync(context, LuisKeyFor.HoGentGeneral);
+                    // var response = await DispatchToLuisModelAsync(context, LuisKeyFor.HoGentGeneral);
 
-                    var data = await _dbService.Get<CourseDataEntity>(response.Entity.Value);
+                    await SendSuggestedActionsAsync(context, default(CancellationToken));
 
                     // Here, you can add code for calling the hypothetical home automation service, passing in any entity information that you need
                     break;
                 case DispatchKeyFor.TrainingCourses:
                     var result = await DispatchToLuisModelAsync(context, LuisKeyFor.TrainingCourses);
-
-
-                    // Here, you can add code for calling the hypothetical weather service,
-                    // passing in any entity information that you need
+                    var responseText = string.Empty;
+                    try
+                    {
+                        responseText = await CourseIntentionHandler.GetResponseTextAsync(_dbService, result);
+                        await context.SendActivityAsync(responseText);
+                    }
+                    catch (Exception e)
+                    {
+                        await context.SendActivityAsync(e.Message);
+                    }
+                    
                     break;
                 case DispatchKeyFor.None:
                     // You can provide logic here to handle the known None intent (none of the above).
@@ -166,11 +175,35 @@ namespace StudyInfo.Bot.StudyInfo
         /// </summary>
         private async Task<LuisResult> DispatchToLuisModelAsync(ITurnContext context, string appName, CancellationToken cancellationToken = default(CancellationToken))
         {
-            var result = await _services.LuisServices[appName].RecognizeAsync<CourseRecognizerConvert>(context, cancellationToken);
+            var entity = new Logic.Data.Domain.Luis.Entity();
+            var intent = IntentType.None;
+            try
+            {
+                var result = await _services.LuisServices[appName].RecognizeAsync<CourseRecognizerConvert>(context, cancellationToken);
 
-            var entity = new Logic.Data.Domain.Luis.Entity() { Type = result.Entities.Instance.Courses.FirstOrDefault().Type, Value = result.Entities.Courses[0][0] };
-            var intent = result.Intents.FirstOrDefault().Key;
+                entity = new Logic.Data.Domain.Luis.Entity() { Type = result.Entities.Instance.Courses.FirstOrDefault().Type, Value = result.Entities.Courses[0][0] };
+                intent = result.Intents.FirstOrDefault().Key;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
             return new LuisResult() { Entity = entity, Intent = intent };
+        }
+
+        private static async Task SendSuggestedActionsAsync(ITurnContext turnContext, CancellationToken cancellationToken)
+        {
+            var reply = turnContext.Activity.CreateReply("Het inschrijvingsgeld varieert naargelang of geniet van een beurs of niet. Wat voor soort student bent u ?");
+            reply.SuggestedActions = new SuggestedActions()
+            {
+                Actions = new List<CardAction>()
+                {
+                    new CardAction() { Title = "Beursstudent", Type = ActionTypes.ImBack, Value = "Beursstudent" },
+                    new CardAction() { Title = "Bijna-beursstudent ", Type = ActionTypes.ImBack, Value = "Bijna-beursstudent" },
+                    new CardAction() { Title = "Niet-beursstudent", Type = ActionTypes.ImBack, Value = "Niet-beursstudent" },
+                },
+            };
+            await turnContext.SendActivityAsync(reply, cancellationToken);
         }
     }
 }

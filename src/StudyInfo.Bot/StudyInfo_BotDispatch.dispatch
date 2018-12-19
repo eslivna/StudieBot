@@ -1,36 +1,36 @@
 {
-  "authoringRegion": "westus",
+  "authoringRegion": "westeurope",
   "hierarchical": true,
   "services": [
     {
-      "appId": "ba990593-9f77-4104-a363-6de90a28471d",
-      "authoringKey": "c5f8a86e8def40b2b10f03abcf80318f",
+      "appId": "8a2716c3-6d13-4e6a-a237-6c282b6ad7b4",
+      "authoringKey": "ad934e05a6ef45669fc8867113c29b3e",
       "subscriptionKey": "",
       "version": "0.1",
-      "region": "westus",
+      "region": "westeurope",
       "type": "luis",
       "name": "HoGentGeneral",
       "id": "7"
     },
     {
-      "appId": "154eb773-4917-4fac-ad5c-55f3c418ec50",
-      "authoringKey": "c5f8a86e8def40b2b10f03abcf80318f",
+      "appId": "7e9e1e64-fb89-4fda-be38-867b7bc25698",
+      "authoringKey": "ad934e05a6ef45669fc8867113c29b3e",
       "subscriptionKey": "",
       "version": "0.1",
-      "region": "westus",
+      "region": "westeurope",
       "type": "luis",
       "name": "Training Courses",
       "id": "50"
     }
   ],
   "serviceIds": [
-    "1",
-    "2"
+    "7",
+    "50"
   ],
-  "appId": "5871f63b-5e71-4aac-8d33-0b3aa6cb0018",
-  "authoringKey": "c5f8a86e8def40b2b10f03abcf80318f",
+  "appId": "8a5e0689-921c-40e0-80e8-166599f47fd3",
+  "authoringKey": "ad934e05a6ef45669fc8867113c29b3e",
   "version": "Dispatch",
-  "region": "westus",
+  "region": "westeurope",
   "type": "dispatch",
   "name": "StudyInfo_BotDispatch"
 }

@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <AssemblyName>StudyInfo-Bot</AssemblyName>
     <RootNamespace>StudyInfo-Bot</RootNamespace>
+    <UserSecretsId>c5bc59cc-8c22-4c5f-a870-d9b351e88972</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,5 +28,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\StudyInfo.Logic\StudyInfo.Logic.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 </Project>

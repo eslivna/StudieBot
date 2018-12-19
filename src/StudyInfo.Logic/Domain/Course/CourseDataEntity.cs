@@ -3,7 +3,7 @@
 namespace StudyInfo.Logic.Data.Domain.Course
 {
     /// <summary>
-    /// The ImageDataEntity class
+    /// The CourseDataEntity class
     /// Contains all the properties that correspond to the columns in a tabel from Table Storage
     /// <see cref="https://docs.microsoft.com/en-us/azure/cosmos-db/table-storage-how-to-use-dotnet#add-an-entity-to-a-table"/>
     /// </summary>

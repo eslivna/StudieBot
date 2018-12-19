@@ -13,6 +13,7 @@ using Microsoft.Bot.Connector.Authentication;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using StudyInfo.Bot.StudyInfo;
 using StudyInfo.Logic.Data;
 using StudyInfo.Logic.Infrastructure;
@@ -25,18 +26,12 @@ namespace StudyInfo_Bot
     public class Startup
     {
         private ILoggerFactory _loggerFactory;
-        private readonly bool _isProduction;
+        private readonly bool _isProduction = false;
+        private static string _spellCheckApuKey;
 
-        public Startup(IHostingEnvironment env)
+        public Startup(IConfiguration configuration)
         {
-            _isProduction = env.IsProduction();
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
-                .AddEnvironmentVariables();
-
-            Configuration = builder.Build();
+            Configuration = configuration;
         }
 
         /// <summary>
@@ -59,6 +54,9 @@ namespace StudyInfo_Bot
             var appSettings = Configuration.Get<AppSettings>();
             services.AddSingleton(appSettings);
             ((ConfigurationRoot)Configuration).AddTableStorageServices(appSettings.TableStorageConfiguration);
+            ((ConfigurationRoot)Configuration).AddSpellCheckServices(appSettings.SpellCheckConfiguration);
+
+            _spellCheckApuKey = appSettings.SpellCheckConfiguration.ApiKey;
 
             var secretKey = Configuration.GetSection("botFileSecret")?.Value;
             var botFilePath = Configuration.GetSection("botFilePath")?.Value;
@@ -220,7 +218,7 @@ namespace StudyInfo_Bot
                         var dispatchApp = new LuisApplication(dispatch.AppId, dispatch.AuthoringKey, dispatch.GetEndpoint());
 
                         // Since the Dispatch tool generates a LUIS model, we use LuisRecognizer to resolve dispatching of the incoming utterance
-                        var dispatchARecognizer = new LuisRecognizer(dispatchApp);
+                        var dispatchARecognizer = new LuisRecognizer(dispatchApp, new LuisPredictionOptions() { BingSpellCheckSubscriptionKey = _spellCheckApuKey, SpellCheck = true });
                         luisServices.Add(dispatch.Name, dispatchARecognizer);
                         break;
 

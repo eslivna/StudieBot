@@ -1,0 +1,23 @@
+Label	Weight	Text
+l_HoGentGeneral	1,3	hoeveel moet ik voor de opleiding betalen
+l_HoGentGeneral	1,3	hoeveel moet ik voor de opleiding betalen
+l_HoGentGeneral	1,3	hoeveel moet ik voor de opleiding betalen
+l_HoGentGeneral	1,3	hoeveel moet ik voor de opleiding betalen
+l_HoGentGeneral	1,3	hoeveel moet ik voor de opleiding betalen
+l_HoGentGeneral	1,3	hoeveel moet ik voor de opleiding betalen
+l_HoGentGeneral	1,3	hoeveel moet ik voor de opleiding betalen
+l_HoGentGeneral	1,3	hoeveel moet ik voor de opleiding betalen
+l_HoGentGeneral	1,3	hoeveel moet ik voor de opleiding betalen
+l_HoGentGeneral	1,3	hoeveel moet ik voor de opleiding betalen
+l_Training Courses	1,083333	wie geeft het vak wiskunde
+l_Training Courses	1,083333	hoeveel tijd moet ik studeren voor wiskunde
+l_Training Courses	1,083333	welke docent krijg ik voor het vak wiskunde
+l_Training Courses	1,083333	wie geeft het vak wiskunde
+l_Training Courses	1,083333	hoeveel tijd moet ik studeren voor wiskunde
+l_Training Courses	1,083333	welke docent krijg ik voor het vak wiskunde
+l_Training Courses	1,083333	wie geeft het vak wiskunde
+l_Training Courses	1,083333	hoeveel tijd moet ik studeren voor wiskunde
+l_Training Courses	1,083333	welke docent krijg ik voor het vak wiskunde
+l_Training Courses	1,083333	wie geeft het vak wiskunde
+l_Training Courses	1,083333	hoeveel tijd moet ik studeren voor wiskunde
+l_Training Courses	1,083333	welke docent krijg ik voor het vak wiskunde

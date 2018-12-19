@@ -1,0 +1,23 @@
+Label	Weight	Text
+l_HoGentGeneral	1,3	wat zijn de studiekosten
+l_HoGentGeneral	1,3	wat zijn de studiekosten
+l_HoGentGeneral	1,3	wat zijn de studiekosten
+l_HoGentGeneral	1,3	wat zijn de studiekosten
+l_HoGentGeneral	1,3	wat zijn de studiekosten
+l_HoGentGeneral	1,3	wat zijn de studiekosten
+l_HoGentGeneral	1,3	wat zijn de studiekosten
+l_HoGentGeneral	1,3	wat zijn de studiekosten
+l_HoGentGeneral	1,3	wat zijn de studiekosten
+l_HoGentGeneral	1,3	wat zijn de studiekosten
+l_Training Courses	1,083333	welke docent krijg ik voor het vak wiskunde
+l_Training Courses	1,083333	studiepunten computerarchitectuur
+l_Training Courses	1,083333	kan ik wiskunde studeren op 10 uur
+l_Training Courses	1,083333	welke docent krijg ik voor het vak wiskunde
+l_Training Courses	1,083333	studiepunten computerarchitectuur
+l_Training Courses	1,083333	kan ik wiskunde studeren op 10 uur
+l_Training Courses	1,083333	welke docent krijg ik voor het vak wiskunde
+l_Training Courses	1,083333	studiepunten computerarchitectuur
+l_Training Courses	1,083333	kan ik wiskunde studeren op 10 uur
+l_Training Courses	1,083333	welke docent krijg ik voor het vak wiskunde
+l_Training Courses	1,083333	studiepunten computerarchitectuur
+l_Training Courses	1,083333	kan ik wiskunde studeren op 10 uur

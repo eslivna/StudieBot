@@ -1,0 +1,26 @@
+Label	Weight	Text
+l_HoGentGeneral	1,083333	wat zijn de studiekosten
+l_HoGentGeneral	1,083333	studiekosten
+l_HoGentGeneral	1,083333	hoeveel is het inschrijvingsgeld
+l_HoGentGeneral	1,083333	hoeveel kost de opleiding
+l_HoGentGeneral	1,083333	hoeveel bedraagt het inschrijvingsgeld
+l_HoGentGeneral	1,083333	hoeveel moet ik voor de opleiding betalen
+l_HoGentGeneral	1,083333	wat zijn de studiekosten
+l_HoGentGeneral	1,083333	studiekosten
+l_HoGentGeneral	1,083333	hoeveel is het inschrijvingsgeld
+l_HoGentGeneral	1,083333	hoeveel kost de opleiding
+l_HoGentGeneral	1,083333	hoeveel bedraagt het inschrijvingsgeld
+l_HoGentGeneral	1,083333	hoeveel moet ik voor de opleiding betalen
+l_Training Courses	1	hoeveel studiepunten heeft het vak analyse i
+l_Training Courses	1	welke docent krijg ik voor het vak wiskunde
+l_Training Courses	1	hoeveel tijd moet ik voorzien voor wiskunde
+l_Training Courses	1	kan ik wiskunde studeren op 10 uur
+l_Training Courses	1	gewicht wiskunde
+l_Training Courses	1	wie geeft het vak wiskunde
+l_Training Courses	1	wat is het gewicht van analyse1
+l_Training Courses	1	hoeveel tijd moet ik studeren voor wiskunde
+l_Training Courses	1	welke leerkracht geeft het vak wiskunde
+l_Training Courses	1	studiepunten computerarchitectuur
+l_Training Courses	1	hoelang moet ik studeren voor analyse 1
+l_Training Courses	1	gewicht analyse 1
+l_Training Courses	1	docent wiskunde
