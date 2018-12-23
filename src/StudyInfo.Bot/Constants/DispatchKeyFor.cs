@@ -5,6 +5,6 @@
         public const string HoGentGeneral = "l_HoGentGeneral";
         public const string TrainingCourses = "l_Training_Courses";
         public const string None = "None";
-        public const string qna = "q_sample-qna";
+        public const string QnA = "q_General";
     }
 }

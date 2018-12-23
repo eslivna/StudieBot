@@ -31,47 +31,57 @@
         {
           "canonicalForm": "Computernetwerken I",
           "list": [
-            "computernetwerken 1"
+            "computernetwerken 1",
+            "computernetwerken"
           ]
         },
         {
           "canonicalForm": "OO Programmeren I",
           "list": [
-            "programmeren 1"
+            "programmeren 1",
+            "programmeren"
           ]
         },
         {
           "canonicalForm": "Analyse I",
           "list": [
             "analyse 1",
-            "analyse1"
+            "analyse1",
+            "analyse"
           ]
         },
         {
           "canonicalForm": "OO Ontwerpen I",
           "list": [
-            "ontwerpen 1"
+            "ontwerpen 1",
+            "ontwerpen"
           ]
         },
         {
           "canonicalForm": "Databanken I",
           "list": [
-            "databanken 1"
+            "databanken 1",
+            "databanken"
           ]
         },
         {
           "canonicalForm": "Webapplicaites I",
           "list": [
-            "webapplicaties 1"
+            "webapplicaties 1",
+            "webapplicaties"
           ]
         },
         {
           "canonicalForm": "Partim Financieel Management",
-          "list": []
+          "list": [
+            "financieel management"
+          ]
         },
         {
           "canonicalForm": "Partim Strategisch Management",
-          "list": []
+          "list": [
+            "strategisch management"
+          ]
         },
         {
           "canonicalForm": "Math4IT",
@@ -104,13 +114,252 @@
         {
           "canonicalForm": "OO Programmeren II",
           "list": [
-            "OO Programmeren 2"
+            "OO Programmeren 2",
+            "programmeren 2"
           ]
         },
         {
           "canonicalForm": "Webapplicaties II",
           "list": [
             "Webapplicaties 2"
+          ]
+        },
+        {
+          "canonicalForm": "Bedrijfsmanagement",
+          "list": []
+        },
+        {
+          "canonicalForm": "IT2Business",
+          "list": []
+        },
+        {
+          "canonicalForm": "Analyse II",
+          "list": [
+            "analyse 2"
+          ]
+        },
+        {
+          "canonicalForm": "Onderzoekstechnieken",
+          "list": []
+        },
+        {
+          "canonicalForm": "Probleemoplossend denken II",
+          "list": [
+            "PODII",
+            "pod2",
+            "probleemoplossend denken 2"
+          ]
+        },
+        {
+          "canonicalForm": "Databanken II",
+          "list": [
+            "databanken 2"
+          ]
+        },
+        {
+          "canonicalForm": "Besturingssystemen",
+          "list": []
+        },
+        {
+          "canonicalForm": "Internationale Communicatie II",
+          "list": [
+            "internationale communicatie 2"
+          ]
+        },
+        {
+          "canonicalForm": "i²Talent",
+          "list": [
+            "I 2 Talent",
+            "I2Talent"
+          ]
+        },
+        {
+          "canonicalForm": "OO Programmeren III",
+          "list": [
+            "prgrammeren 3"
+          ]
+        },
+        {
+          "canonicalForm": "Webapplicaties IV",
+          "list": [
+            "webapplicaties 4",
+            "webapps 4"
+          ]
+        },
+        {
+          "canonicalForm": "OO Ontwerpen II",
+          "list": [
+            "ontwerpen 2"
+          ]
+        },
+        {
+          "canonicalForm": "OO Ontwerpen III",
+          "list": [
+            "ontwerpen 3"
+          ]
+        },
+        {
+          "canonicalForm": "Webapplicaties III",
+          "list": [
+            "webapps 3",
+            "webapplicaties 3"
+          ]
+        },
+        {
+          "canonicalForm": "Projecten-workshops II: Programmeren",
+          "list": [
+            "projecten 2",
+            "projecten 2 programmeren"
+          ]
+        },
+        {
+          "canonicalForm": "Computernetwerken II",
+          "list": [
+            "computernetwerken 2",
+            "computernetwerken"
+          ]
+        },
+        {
+          "canonicalForm": "Computernetwerken III",
+          "list": [
+            "computernetwerken 3",
+            "computernetwerken"
+          ]
+        },
+        {
+          "canonicalForm": "Projecten-workshops II: Systeembeheer",
+          "list": [
+            "projecten 2",
+            "projecten 2 systeembeheer"
+          ]
+        },
+        {
+          "canonicalForm": "Analyse III",
+          "list": [
+            "analyse 3"
+          ]
+        },
+        {
+          "canonicalForm": "Databanken III",
+          "list": [
+            "databanken 3"
+          ]
+        },
+        {
+          "canonicalForm": "Internationale Communicatie III",
+          "list": [
+            "internationale communicatie 3",
+            "talen 3"
+          ]
+        },
+        {
+          "canonicalForm": "Artificiële Intelligentie",
+          "list": [
+            "AI"
+          ]
+        },
+        {
+          "canonicalForm": "Native apps I",
+          "list": [
+            "android"
+          ]
+        },
+        {
+          "canonicalForm": "Native apps II: mobile apps voor Windows",
+          "list": [
+            "windows"
+          ]
+        },
+        {
+          "canonicalForm": "Native apps II: mobile apps voor iOS",
+          "list": [
+            "ios",
+            "iphone applicaties"
+          ]
+        },
+        {
+          "canonicalForm": "Web apps",
+          "list": [
+            "webapps"
+          ]
+        },
+        {
+          "canonicalForm": "Project III: Mobile apps",
+          "list": [
+            "projecten 3 mobile aps"
+          ]
+        },
+        {
+          "canonicalForm": "Enterprise Linux",
+          "list": []
+        },
+        {
+          "canonicalForm": "Windows Server",
+          "list": []
+        },
+        {
+          "canonicalForm": "Computernetwerken IV",
+          "list": [
+            "computernetwerken 4",
+            "computernetwerken"
+          ]
+        },
+        {
+          "canonicalForm": "Project III: Systeembeheer",
+          "list": [
+            "projecten 3 systeembeheer"
+          ]
+        },
+        {
+          "canonicalForm": "Inleiding Mainframe",
+          "list": []
+        },
+        {
+          "canonicalForm": "Mainframe systeembeheer",
+          "list": []
+        },
+        {
+          "canonicalForm": "Databanken en transactiesystemen",
+          "list": []
+        },
+        {
+          "canonicalForm": "Batchapplicaties",
+          "list": []
+        },
+        {
+          "canonicalForm": "Business Intelligence & Big Data",
+          "list": [
+            "BI",
+            "Big Data"
+          ]
+        },
+        {
+          "canonicalForm": "e-commerce",
+          "list": []
+        },
+        {
+          "canonicalForm": "Business Software",
+          "list": []
+        },
+        {
+          "canonicalForm": "Project III: e-Business",
+          "list": [
+            "projecten 3 e-business"
+          ]
+        },
+        {
+          "canonicalForm": "Stage",
+          "list": []
+        },
+        {
+          "canonicalForm": "Bachelorproef",
+          "list": []
+        },
+        {
+          "canonicalForm": "i³Talent",
+          "list": [
+            "I3talent",
+            "I 3 Talent"
           ]
         }
       ],

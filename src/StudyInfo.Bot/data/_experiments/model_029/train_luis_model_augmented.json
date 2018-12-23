@@ -12,7 +12,7 @@
       "name": "l_Training Courses"
     },
     {
-      "name": "q_General"
+      "name": "q_"
     }
   ],
   "entities": [],
@@ -26,7 +26,12 @@
   "patterns": [],
   "utterances": [
     {
-      "text": "hoeveel is het inschrijvingsgeld",
+      "text": "hoeveel kost de opleiding",
+      "intent": "l_HoGentGeneral",
+      "entities": []
+    },
+    {
+      "text": "hoeveel moet ik voor de opleiding betalen",
       "intent": "l_HoGentGeneral",
       "entities": []
     },
@@ -41,27 +46,22 @@
       "entities": []
     },
     {
-      "text": "wat zijn de studiekosten",
-      "intent": "l_HoGentGeneral",
-      "entities": []
-    },
-    {
-      "text": "hoeveel kost de opleiding",
-      "intent": "l_HoGentGeneral",
-      "entities": []
-    },
-    {
-      "text": "hoeveel moet ik voor de opleiding betalen",
-      "intent": "l_HoGentGeneral",
-      "entities": []
-    },
-    {
       "text": "hoeveel moet ik betalen",
       "intent": "l_HoGentGeneral",
       "entities": []
     },
     {
-      "text": "wie geeft het vak wiskunde",
+      "text": "hoeveel is het inschrijvingsgeld",
+      "intent": "l_HoGentGeneral",
+      "entities": []
+    },
+    {
+      "text": "wat zijn de studiekosten",
+      "intent": "l_HoGentGeneral",
+      "entities": []
+    },
+    {
+      "text": "welke docent krijg ik voor het vak wiskunde",
       "intent": "l_Training Courses",
       "entities": []
     },
@@ -71,32 +71,7 @@
       "entities": []
     },
     {
-      "text": "hoeveel ga ik moeten studeren voor wiskunde",
-      "intent": "l_Training Courses",
-      "entities": []
-    },
-    {
       "text": "hoeveel tijd moet ik studeren voor wiskunde",
-      "intent": "l_Training Courses",
-      "entities": []
-    },
-    {
-      "text": "welke docent krijg ik voor het vak wiskunde",
-      "intent": "l_Training Courses",
-      "entities": []
-    },
-    {
-      "text": "wat is de studieomvang van probleemoplossend denken 1",
-      "intent": "l_Training Courses",
-      "entities": []
-    },
-    {
-      "text": "hoeveel uren heb ik nodig om het analyse1 te begrijpen",
-      "intent": "l_Training Courses",
-      "entities": []
-    },
-    {
-      "text": "hoeveel tijd moet ik voorzien voor wiskunde",
       "intent": "l_Training Courses",
       "entities": []
     },
@@ -106,17 +81,7 @@
       "entities": []
     },
     {
-      "text": "wat is het gewicht van analyse1",
-      "intent": "l_Training Courses",
-      "entities": []
-    },
-    {
-      "text": "gewicht wiskunde",
-      "intent": "l_Training Courses",
-      "entities": []
-    },
-    {
-      "text": "kan ik wiskunde studeren op 10 uur",
+      "text": "hoeveel tijd moet ik voorzien voor wiskunde",
       "intent": "l_Training Courses",
       "entities": []
     },
@@ -131,18 +96,53 @@
       "entities": []
     },
     {
-      "text": "welke leerkracht geeft het vak wiskunde",
-      "intent": "l_Training Courses",
-      "entities": []
-    },
-    {
       "text": "docent wiskunde",
       "intent": "l_Training Courses",
       "entities": []
     },
     {
+      "text": "kan ik wiskunde studeren op 10 uur",
+      "intent": "l_Training Courses",
+      "entities": []
+    },
+    {
+      "text": "wat is het gewicht van analyse1",
+      "intent": "l_Training Courses",
+      "entities": []
+    },
+    {
+      "text": "gewicht wiskunde",
+      "intent": "l_Training Courses",
+      "entities": []
+    },
+    {
+      "text": "welke leerkracht geeft het vak wiskunde",
+      "intent": "l_Training Courses",
+      "entities": []
+    },
+    {
+      "text": "hoeveel ga ik moeten studeren voor wiskunde",
+      "intent": "l_Training Courses",
+      "entities": []
+    },
+    {
+      "text": "wat is de studieomvang van probleemoplossend denken 1",
+      "intent": "l_Training Courses",
+      "entities": []
+    },
+    {
+      "text": "wie geeft het vak wiskunde",
+      "intent": "l_Training Courses",
+      "entities": []
+    },
+    {
+      "text": "hoeveel uren heb ik nodig om het analyse1 te begrijpen",
+      "intent": "l_Training Courses",
+      "entities": []
+    },
+    {
       "text": "hoe is de opleiding opgebouwd ?",
-      "intent": "q_General",
+      "intent": "q_",
       "entities": []
     }
   ],

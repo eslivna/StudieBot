@@ -31,10 +31,10 @@ namespace StudyInfo.Bot.StudyInfo
             _services = services ?? throw new ArgumentNullException(nameof(services));
             _dbService = databaseService ?? throw new ArgumentNullException(nameof(databaseService));
 
-            //if (!_services.QnAServices.ContainsKey(QnAMakerKey))
-            //{
-            //    throw new System.ArgumentException($"Invalid configuration. Please check your '.bot' file for a QnA service named '{DispatchKey}'.");
-            //}
+            if (!_services.QnAServices.ContainsKey(QnAKeyFor.General))
+            {
+                throw new System.ArgumentException($"Invalid configuration. Please check your '.bot' file for a QnA service named '{QnAKeyFor.General}'.");
+            }
 
             if (!_services.LuisServices.ContainsKey(LuisKeyFor.HoGentGeneral))
             {
@@ -112,16 +112,11 @@ namespace StudyInfo.Bot.StudyInfo
         /// </summary>
         private async Task DispatchToTopIntentAsync(ITurnContext context, (string intent, double score)? topIntent, CancellationToken cancellationToken = default(CancellationToken))
         {
-            //const string qnaDispatchKey = "q_sample-qna";
-
             switch (topIntent.Value.intent)
             {
                 case DispatchKeyFor.HoGentGeneral:
-                    // var response = await DispatchToLuisModelAsync(context, LuisKeyFor.HoGentGeneral);
-
                     await SendSuggestedActionsAsync(context, default(CancellationToken));
 
-                    // Here, you can add code for calling the hypothetical home automation service, passing in any entity information that you need
                     break;
                 case DispatchKeyFor.TrainingCourses:
                     var result = await DispatchToLuisModelAsync(context, LuisKeyFor.TrainingCourses);
@@ -135,13 +130,11 @@ namespace StudyInfo.Bot.StudyInfo
                     {
                         await context.SendActivityAsync(e.Message);
                     }
-                    
+
                     break;
                 case DispatchKeyFor.None:
-                    // You can provide logic here to handle the known None intent (none of the above).
-                    // In this example we fall through to the QnA intent.
-                    //case qnaDispatchKey:
-                    //    await DispatchToQnAMakerAsync(context, QnAMakerKey);
+                case DispatchKeyFor.QnA:
+                    await DispatchToQnAMakerAsync(context, QnAKeyFor.General);
                     break;
 
                 default:
