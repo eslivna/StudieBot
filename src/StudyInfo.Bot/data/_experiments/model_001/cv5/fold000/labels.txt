@@ -1,2 +1,0 @@
-Label	LabelName	Samples
-0	l_	28

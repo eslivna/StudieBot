@@ -1,29 +1,40 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
     <AssemblyName>StudyInfo-Bot</AssemblyName>
     <RootNamespace>StudyInfo-Bot</RootNamespace>
     <UserSecretsId>c5bc59cc-8c22-4c5f-a870-d9b351e88972</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="StudyInfo_Bot.bot">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <None Remove="DeploymentScripts\nl\StudyInfo_BotDispatch.luis" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore" Version="2.1.3" />
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
-    <PackageReference Include="Microsoft.Bot.Builder" Version="4.1.5" />
-    <PackageReference Include="Microsoft.Bot.Builder.AI.Luis" Version="4.1.5" />
-    <PackageReference Include="Microsoft.Bot.Builder.AI.QnA" Version="4.1.5" />
-    <PackageReference Include="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.1.5" />
-    <PackageReference Include="Microsoft.Bot.Configuration" Version="4.1.5" />
-    <PackageReference Include="Microsoft.Bot.Connector" Version="4.1.5" />
-    <PackageReference Include="Microsoft.Bot.Schema" Version="4.1.5" />
-    <PackageReference Include="Microsoft.Extensions.Logging.AzureAppServices" Version="2.1.1" />
+    <Content Include="DeploymentScripts\nl\StudyInfo_BotDispatch.luis" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AdaptiveCards" Version="1.1.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.8.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Azure.CognitiveServices.ContentModerator" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Bot.Builder" Version="4.2.0" />
+    <PackageReference Include="Microsoft.Bot.Builder.AI.Luis" Version="4.2.0" />
+    <PackageReference Include="Microsoft.Bot.Builder.AI.QnA" Version="4.2.0" />
+    <PackageReference Include="Microsoft.Bot.Builder.Azure" Version="4.2.0" />
+    <PackageReference Include="Microsoft.Bot.Builder.Dialogs" Version="4.2.0" />
+    <PackageReference Include="Microsoft.Bot.Builder.Integration.ApplicationInsights.Core" Version="4.2.0" />
+    <PackageReference Include="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.2.0" />
+    <PackageReference Include="Microsoft.Bot.Builder.TemplateManager" Version="4.2.0" />
+    <PackageReference Include="Microsoft.Bot.Configuration" Version="4.2.0" />
+    <PackageReference Include="AsyncUsageAnalyzers" Version="1.0.0-alpha003" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Bot.Connector" Version="4.2.0" />
+    <PackageReference Include="Microsoft.Bot.Schema" Version="4.2.0" />
+    <PackageReference Include="Microsoft.Recognizers.Text.Choice" Version="1.1.4" />
+    <PackageReference Include="Microsoft.Recognizers.Text.DataTypes.TimexExpression" Version="1.1.4" />
+    <PackageReference Include="Microsoft.Recognizers.Text.DateTime" Version="1.1.4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,5 +45,48 @@
     <Content Update="appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Dialogs\Cancel\Resources\CancelStrings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CancelStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Dialogs\Main\Resources\MainStrings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MainStrings.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <EmbeddedResource Update="Dialogs\Cancel\Resources\CancelStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CancelStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Dialogs\Main\Resources\MainStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MainStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="*.bot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CognitiveModels\LUIS\en\" />
+    <Folder Include="CognitiveModels\LUIS\fr\" />
+    <Folder Include="CognitiveModels\LUIS\nl\" />
+    <Folder Include="CognitiveModels\QnA\en\" />
+    <Folder Include="CognitiveModels\QnA\fr\" />
+    <Folder Include="CognitiveModels\QnA\nl\" />
+    <Folder Include="DeploymentScripts\en\" />
+    <Folder Include="Dialogs\Cancel\Resources\" />
+    <Folder Include="Dialogs\CourseInfo\" />
   </ItemGroup>
 </Project>

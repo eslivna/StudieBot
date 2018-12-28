@@ -24,7 +24,7 @@ namespace StudyInfo.ConsoleApp.SampleData
             new CourseDataEntity(){RowKey="i2Talent", Course = "i¹Talent", Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(12,0,12,51))},
             new CourseDataEntity(){RowKey="Projecten-workshops1", Course = "Projecten-workshops I", Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(36,12,0,102))},
             new CourseDataEntity(){RowKey="OOProgrammeren2", Course = "OO Programmeren II", Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,12,48,65))},
-            new CourseDataEntity(){RowKey="Webapplicaties2", Course = "Webapplicaties II", Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,0,63,64))}
+            new CourseDataEntity(){RowKey="Webapplicaties2", Course = "Webapplicaties II", Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,0,63,64))},
 
             //Courses second year
             new CourseDataEntity(){RowKey="Bedrijfsmanagement", Course = "Bedrijfsmanagement", Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,6,18,51))},

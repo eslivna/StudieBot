@@ -1,0 +1,38 @@
+{
+  "version": "2.0",
+  "services": [
+    {
+      "type": "endpoint",
+      "name": "development",
+      "endpoint": "http://localhost:3978/api/messages",
+      "id": "1"
+    },
+    {
+      "type": "luis",
+      "id": "7",
+      "name": "HoGentGeneral"
+    },
+    {
+      "type": "luis",
+      "id": "50",
+      "name": "Training Courses"
+
+    },
+    {
+      "type": "qna",
+      "name": "General",
+      "id": "60"
+    },
+    {
+      "type": "dispatch",
+      "id": "254",
+      "name": "StudyInfo_BotDispatch",
+      "serviceIds": [
+        "HoGentGeneral",
+        "Training Courses",
+        "General"
+      ]
+
+    }
+  ]
+}

@@ -1,4 +1,0 @@
-Label	LabelName	Samples
-0	l_HoGentGeneral	14
-1	l_Training Courses	16
-2	q_	10
