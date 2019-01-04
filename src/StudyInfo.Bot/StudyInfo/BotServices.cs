@@ -6,7 +6,6 @@ using Microsoft.Bot.Builder.AI.Luis;
 using Microsoft.Bot.Builder.AI.QnA;
 using Microsoft.Bot.Configuration;
 using StudyInfo.Bot.Middleware.Telemetry;
-using StudyInfo.Logic.Infrastructure;
 
 namespace StudyInfo.Bot.StudyInfo
 {
@@ -106,7 +105,7 @@ namespace StudyInfo.Bot.StudyInfo
                                 Host = qna.Hostname,
                             };
                             var qnaMaker = new TelemetryQnAMaker(qnaEndpoint);
-                            QnAServices.Add(qna.Id, qnaMaker);
+                            QnAServices.Add(qna.Name, qnaMaker);
                             break;
                         }
 

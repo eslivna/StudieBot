@@ -2,17 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <AssemblyName>StudyInfo-Bot</AssemblyName>
-    <RootNamespace>StudyInfo-Bot</RootNamespace>
+    <AssemblyName>StudyInfo.Bot</AssemblyName>
+    <RootNamespace>StudyInfo.Bot</RootNamespace>
     <UserSecretsId>c5bc59cc-8c22-4c5f-a870-d9b351e88972</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="DeploymentScripts\nl\StudyInfo_BotDispatch.luis" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="DeploymentScripts\nl\StudyInfo_BotDispatch.luis" />
+    <EmbeddedResource Remove="Dialogs\Escalate\Resources\EscalateString.nl.resx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -42,21 +38,25 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="appsettings.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Dialogs\Cancel\Resources\CancelStrings.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>CancelStrings.resx</DependentUpon>
     </Compile>
+    <Compile Update="Dialogs\Escalate\Resources\EscalateString.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>EscalateString.resx</DependentUpon>
+    </Compile>
     <Compile Update="Dialogs\Main\Resources\MainStrings.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>MainStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Dialogs\Teacher\Resources\TeacherString.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TeacherString.resx</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -66,9 +66,17 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>CancelStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="Dialogs\Escalate\Resources\EscalateString.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EscalateString.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Dialogs\Main\Resources\MainStrings.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>MainStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Dialogs\Teacher\Resources\TeacherString.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TeacherString.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 
@@ -79,14 +87,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="CognitiveModels\LUIS\en\" />
-    <Folder Include="CognitiveModels\LUIS\fr\" />
-    <Folder Include="CognitiveModels\LUIS\nl\" />
-    <Folder Include="CognitiveModels\QnA\en\" />
-    <Folder Include="CognitiveModels\QnA\fr\" />
-    <Folder Include="CognitiveModels\QnA\nl\" />
-    <Folder Include="DeploymentScripts\en\" />
-    <Folder Include="Dialogs\Cancel\Resources\" />
-    <Folder Include="Dialogs\CourseInfo\" />
+    <Folder Include="Dialogs\CourseInfo\Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Dialogs\Escalate\Resources\EscalateString.nl.resx" />
   </ItemGroup>
 </Project>

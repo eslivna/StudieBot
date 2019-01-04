@@ -4,6 +4,7 @@ using AdaptiveCards;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.TemplateManager;
 using Microsoft.Bot.Schema;
+using StudyInfo.Bot.Constants;
 using StudyInfo.Bot.Dialogs.Main.Resources;
 
 namespace StudyInfo.Bot.Dialogs.Main
@@ -14,36 +15,36 @@ namespace StudyInfo.Bot.Dialogs.Main
         {
             ["default"] = new TemplateIdMap
             {
-                { ResponseIds.Cancelled,
+                { ResponseIdFor.Cancelled,
                     (context, data) =>
                     MessageFactory.Text(
                         text: MainStrings.CANCELLED,
                         ssml: MainStrings.CANCELLED,
                         inputHint: InputHints.AcceptingInput)
                 },
-                { ResponseIds.Completed,
+                { ResponseIdFor.Completed,
                     (context, data) =>
                     MessageFactory.Text(
                         text: MainStrings.COMPLETED,
                         ssml: MainStrings.COMPLETED,
                         inputHint: InputHints.AcceptingInput)
                 },
-                { ResponseIds.Confused,
+                { ResponseIdFor.Confused,
                     (context, data) =>
                     MessageFactory.Text(
                         text: MainStrings.CONFUSED,
                         ssml: MainStrings.CONFUSED,
                         inputHint: InputHints.AcceptingInput)
                 },
-                { ResponseIds.Greeting,
+                { ResponseIdFor.Greeting,
                     (context, data) =>
                     MessageFactory.Text(
                         text: MainStrings.GREETING,
                         ssml: MainStrings.GREETING,
                         inputHint: InputHints.AcceptingInput)
                 },
-                { ResponseIds.Help, (context, data) => BuildHelpCard(context, data) },
-                { ResponseIds.Intro, (context, data) => BuildIntroCard(context, data) },
+                { ResponseIdFor.Help, (context, data) => BuildHelpCard(context, data) },
+                { ResponseIdFor.Intro, (context, data) => BuildIntroCard(context, data) },
             }
         };
 
@@ -92,19 +93,7 @@ namespace StudyInfo.Bot.Dialogs.Main
                     new CardAction(type: ActionTypes.OpenUrl, title: MainStrings.HELP_BTN_TEXT_3, value: MainStrings.HELP_BTN_VALUE_3),
                 },
             };
-
             return response;
-        }
-
-        public class ResponseIds
-        {
-            // Constants
-            public const string Cancelled = "cancelled";
-            public const string Completed = "completed";
-            public const string Confused = "confused";
-            public const string Greeting = "greeting";
-            public const string Help = "help";
-            public const string Intro = "intro";
         }
     }
 }

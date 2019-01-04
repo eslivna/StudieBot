@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace StudyInfo.Bot.Dialogs.Cancel.Resources {
+namespace StudyInfo.Bot.Dialogs.Teacher.Resources {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace StudyInfo.Bot.Dialogs.Cancel.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class CancelStrings {
+    public class TeacherString {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal CancelStrings() {
+        internal TeacherString() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace StudyInfo.Bot.Dialogs.Cancel.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("StudyInfo.Bot.Dialogs.Cancel.Resources.CancelStrings", typeof(CancelStrings).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("StudyInfo.Bot.Dialogs.Teacher.Resources.TeacherString", typeof(TeacherString).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,29 +61,11 @@ namespace StudyInfo.Bot.Dialogs.Cancel.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ok, let&apos;s start over..
+        ///   Looks up a localized string similar to .
         /// </summary>
-        public static string CANCEL_CONFIRMED {
+        public static string NAME_ANSWER {
             get {
-                return ResourceManager.GetString("CANCEL_CONFIRMED", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Ok, let&apos;s keep going..
-        /// </summary>
-        public static string CANCEL_DENIED {
-            get {
-                return ResourceManager.GetString("CANCEL_DENIED", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Are you sure you want to cancel?.
-        /// </summary>
-        public static string CANCEL_PROMPT {
-            get {
-                return ResourceManager.GetString("CANCEL_PROMPT", resourceCulture);
+                return ResourceManager.GetString("NAME_ANSWER", resourceCulture);
             }
         }
     }

@@ -11,8 +11,7 @@ namespace StudyInfo.Bot.Dialogs.Cancel
     {
         private static CancelResponses _responder = new CancelResponses();
 
-        public CancelDialog()
-            : base(nameof(CancelDialog))
+        public CancelDialog() : base(nameof(CancelDialog))
         {
             InitialDialogId = nameof(CancelDialog);
 

@@ -15,6 +15,7 @@ namespace StudyInfo.Bot.StudyInfo
         private readonly ConversationState _conversationState;
         private readonly UserState _userState;
         private readonly IBotTelemetryClient _telemetryClient;
+        private readonly IDatabaseService _databaseService;
         private DialogSet _dialogs;
 
         /// <summary>
@@ -27,9 +28,10 @@ namespace StudyInfo.Bot.StudyInfo
             _userState = userState ?? throw new ArgumentNullException(nameof(userState));
             _services = botServices ?? throw new ArgumentNullException(nameof(botServices));
             _telemetryClient = telemetryClient ?? throw new ArgumentNullException(nameof(telemetryClient));
+            _databaseService = databaseService ?? throw new ArgumentNullException(nameof(databaseService));
 
             _dialogs = new DialogSet(_conversationState.CreateProperty<DialogState>(nameof(StudyInfoBot)));
-            _dialogs.Add(new MainDialog(_services, _conversationState, _userState, _telemetryClient));
+            _dialogs.Add(new MainDialog(_services, _conversationState, _userState, _databaseService, _telemetryClient));
         }
 
         /// <summary>

@@ -2,10 +2,12 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Bot.Builder.Dialogs;
+using StudyInfo.Bot.Constants;
 using StudyInfo.Bot.Dialogs.Cancel;
 using StudyInfo.Bot.Dialogs.Main;
 using StudyInfo.Bot.Models;
 using StudyInfo.Bot.StudyInfo;
+using StudyInfo.Logic.Data;
 
 namespace StudyInfo.Bot.Dialogs.Shared
 {
@@ -15,12 +17,14 @@ namespace StudyInfo.Bot.Dialogs.Shared
 
         // Fields
         private readonly BotServices _services;
+        private readonly IDatabaseService _databaseService;
         private readonly CancelResponses _responder = new CancelResponses();
 
-        public StudyInfoDialog(BotServices botServices, string dialogId)
+        public StudyInfoDialog(BotServices botServices, IDatabaseService databaseService, string dialogId)
             : base(dialogId)
         {
             _services = botServices;
+            _databaseService = databaseService;
 
             AddDialog(new CancelDialog());
         }
@@ -81,7 +85,7 @@ namespace StudyInfo.Bot.Dialogs.Shared
         protected virtual async Task<InterruptionStatus> OnHelp(DialogContext dc)
         {
             var view = new MainResponses();
-            await view.ReplyWith(dc.Context, MainResponses.ResponseIds.Help);
+            await view.ReplyWith(dc.Context, ResponseIdFor.Help);
 
             // Signal the conversation was interrupted and should immediately continue
             return InterruptionStatus.Interrupted;

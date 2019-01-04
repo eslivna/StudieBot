@@ -18,6 +18,8 @@ namespace StudyInfo.Bot.Models
             Get_Name_Teacher, 
             Get_Number_Of_Credits, 
             Get_Study_Time, 
+            Escalte, 
+            Cancel,
             None
         };
         public Dictionary<Intent, IntentScore> Intents;
