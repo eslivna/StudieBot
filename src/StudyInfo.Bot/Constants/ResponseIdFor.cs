@@ -11,6 +11,9 @@
         public const string Intro = "intro";
         public const string NameTeacher = "nameTeacher";
         public const string Credit = "credit";
+        public const string NamePrompt = "namePrompt";
+        public const string NameGreeting = "NameGreeting";
+        public const string IntroPrompt = "IntroPrompt";
     }
 }
 

@@ -117,41 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ASK_INFO" xml:space="preserve">
+    <value>Over wat had je graag wat meer informatie gehad ?</value>
+  </data>
   <data name="CANCELLED" xml:space="preserve">
-    <value>OK, recommençons.</value>
+    <value>Ok, laten we opnieuw beginnen</value>
   </data>
   <data name="COMPLETED" xml:space="preserve">
-    <value>Quoi d'autre puis-je vous aider?</value>
+    <value>Kan ik je verder nog ergens mee helpen ?</value>
   </data>
   <data name="CONFUSED" xml:space="preserve">
-    <value>Je suis désolé, je ne suis pas en mesure d'aider avec ça.</value>
+    <value>Oei ! Het lijkt dat ik hier geen antwoord op kan geven 😥</value>
   </data>
   <data name="ERROR" xml:space="preserve">
-    <value>Désolé, on dirait que quelque chose a mal tourné.</value>
+    <value>Oeps! Het lijkt erop dat er iets mis is gelopen</value>
   </data>
   <data name="GREETING" xml:space="preserve">
-    <value>Salut!</value>
+    <value>Hi , ik ben de StudieBot! 🤓 &lt;br&gt; Ik help je bij het vinden van informatie over de vakken van toegepaste informatica!</value>
   </data>
   <data name="GREETING_WITH_NAME" xml:space="preserve">
-    <value>Hé, {0}!</value>
-  </data>
-  <data name="HELP_BTN_TEXT_1" xml:space="preserve">
-    <value>Test LUIS</value>
-  </data>
-  <data name="HELP_BTN_TEXT_2" xml:space="preserve">
-    <value>Test QnA Maker</value>
-  </data>
-  <data name="HELP_BTN_TEXT_3" xml:space="preserve">
-    <value>Pour en savoir plus</value>
-  </data>
-  <data name="HELP_BTN_VALUE_1" xml:space="preserve">
-    <value>Puis-je parler à une personne</value>
-  </data>
-  <data name="HELP_BTN_VALUE_2" xml:space="preserve">
-    <value>Qu'est-ce que le modèle Enterprise bot?</value>
-  </data>
-  <data name="HELP_BTN_VALUE_3" xml:space="preserve">
-    <value>https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0</value>
+    <value>Hi, {0}!</value>
   </data>
   <data name="HELP_TEXT" xml:space="preserve">
     <value>Je suis ton assistante virtuelle! Je peux effectuer un certain nombre de tâches à travers mes compétences connectées. En ce moment je peux vous aider avec le calendrier, email, la tâche et le point d'intérêt des questions. Ou vous pouvez m'aider à faire plus en créant votre propre!</value>
@@ -159,7 +144,13 @@
   <data name="HELP_TITLE" xml:space="preserve">
     <value>Aide pour Virtual Assistant</value>
   </data>
+  <data name="INTRODUCTION" xml:space="preserve">
+    <value />
+  </data>
   <data name="INTRO_PATH" xml:space="preserve">
     <value>.\Dialogs\Main\Resources\Intro.nl.json</value>
+  </data>
+  <data name="TEACHER" xml:space="preserve">
+    <value>Het vak {0} wordt gegeven door {1}</value>
   </data>
 </root>

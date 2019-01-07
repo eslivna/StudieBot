@@ -25,5 +25,7 @@ namespace StudyInfo.Logic.Data.Domain.Course
         public string Teacher { get; set; }
         public int StudyLoad { get; set; }
         public string StudyTime { get; set; }
+        public int AcademicYear { get; set; }
+        public int Term { get; set; }
     }
 }

@@ -9,8 +9,7 @@ namespace StudyInfo.Bot.Dialogs.Shared
 {
     public abstract class RouterDialog : ComponentDialog
     {
-        public RouterDialog(string dialogId)
-            : base(dialogId)
+        public RouterDialog(string dialogId) : base(dialogId)
         {
         }
 

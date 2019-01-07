@@ -8,5 +8,7 @@ namespace StudyInfo.Bot.Dialogs.CourseInfo
     public class CourseInfoState
     {
         public string[] Courses { get; set; }
+        public string[] Year { get; set; }
+        public string[] Semester { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
 using StudyInfo.Bot.Constants;
 using StudyInfo.Bot.Dialogs.Shared;
@@ -13,6 +14,7 @@ namespace StudyInfo.Bot.Dialogs.Teacher.Resources
         private IDatabaseService _databaseService;
         private BotServices _botServices;
         private static TeacherResponses _response = new TeacherResponses();
+        private IStatePropertyAccessor<TeacherState> _accessor;
 
         public TeacherDialog(BotServices botServices, IDatabaseService databaseService) : base(botServices, databaseService, nameof(TeacherDialog))
         {
@@ -20,6 +22,7 @@ namespace StudyInfo.Bot.Dialogs.Teacher.Resources
             _botServices = botServices;
 
             InitialDialogId = nameof(TeacherDialog);
+
             var escalate = new WaterfallStep[]
             {
                 SendNameTeacher,

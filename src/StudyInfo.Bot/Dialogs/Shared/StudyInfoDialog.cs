@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.Bot.Builder.Dialogs;
 using StudyInfo.Bot.Constants;
 using StudyInfo.Bot.Dialogs.Cancel;
+using StudyInfo.Bot.Dialogs.Escalate;
 using StudyInfo.Bot.Dialogs.Main;
 using StudyInfo.Bot.Models;
 using StudyInfo.Bot.StudyInfo;
@@ -32,7 +33,7 @@ namespace StudyInfo.Bot.Dialogs.Shared
         protected override async Task<InterruptionStatus> OnDialogInterruptionAsync(DialogContext dc, CancellationToken cancellationToken)
         {
             // check luis intent
-            _services.LuisServices.TryGetValue("general", out var luisService);
+            _services.LuisServices.TryGetValue(LuisKeyFor.TrainingCourses, out var luisService);
 
             if (luisService == null)
             {
@@ -40,7 +41,7 @@ namespace StudyInfo.Bot.Dialogs.Shared
             }
             else
             {
-                var luisResult = await luisService.RecognizeAsync<DispatchModel>(dc.Context, true, cancellationToken);
+                var luisResult = await luisService.RecognizeAsync<CourseModel>(dc.Context, true, cancellationToken);
                 var intent = luisResult.TopIntent().intent;
 
                 // Only triggers interruption if confidence level is high
@@ -51,15 +52,17 @@ namespace StudyInfo.Bot.Dialogs.Shared
 
                     switch (intent)
                     {
-                        case DispatchModel.Intent.l_Training_Courses:
+
+                        case CourseModel.Intent.Cancel:
                             {
                                 return await OnCancel(dc);
                             }
 
-                        case DispatchModel.Intent.l_HoGentGeneral:
+                        case CourseModel.Intent.Help:
                             {
                                 return await OnHelp(dc);
                             }
+
                     }
                 }
             }

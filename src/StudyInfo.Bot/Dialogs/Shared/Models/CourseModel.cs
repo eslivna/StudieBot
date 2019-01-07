@@ -8,6 +8,8 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.AI.Luis;
+using System;
+
 namespace StudyInfo.Bot.Models
 {
     public class CourseModel: IRecognizerConvert
@@ -18,8 +20,10 @@ namespace StudyInfo.Bot.Models
             Get_Name_Teacher, 
             Get_Number_Of_Credits, 
             Get_Study_Time, 
+            GetAllCourses,
             Escalte, 
             Cancel,
+            Help,
             None
         };
         public Dictionary<Intent, IntentScore> Intents;
@@ -28,12 +32,16 @@ namespace StudyInfo.Bot.Models
         {
 
             // Lists
-            public string[][] Courses;
+            public string[][] Course;
+            public string[][] Year;
+            public string[][] Semester;
 
             // Instance
             public class _Instance
             {
-                public InstanceData[] Courses;
+                public InstanceData[] Course;
+                public InstanceData[] Year;
+                public InstanceData[] Semester;
             }
             [JsonProperty("$instance")]
             public _Instance _instance;

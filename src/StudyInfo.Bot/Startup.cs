@@ -6,7 +6,6 @@ using StudyInfo.Bot.Middleware.Telemetry;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Azure;
 using Microsoft.Bot.Builder.Integration.ApplicationInsights.Core;
 using Microsoft.Bot.Builder.Integration.AspNet.Core;
 using Microsoft.Bot.Configuration;
@@ -27,7 +26,6 @@ namespace StudyInfo.Bot
     {
         private ILoggerFactory _loggerFactory;
         private readonly bool _isProduction = false;
-        private static string _spellCheckApiKey;
 
         public Startup(IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
@@ -70,7 +68,7 @@ namespace StudyInfo.Bot
             services.AddBotApplicationInsights(botConfig);
 
             // Initializes your bot service clients and adds a singleton that your Bot can access through dependency injection.
-            var connectedServices = new BotServices(botConfig);
+            var connectedServices = new BotServices(botConfig, appSettings);
             services.AddSingleton(sp => connectedServices);
 
             //// Initialize Bot State
@@ -133,7 +131,7 @@ namespace StudyInfo.Bot
                 options.Middleware.Add(new ShowTypingMiddleware());
 
                 // Locale Middleware (sets UI culture based on Activity.Locale)
-                options.Middleware.Add(new SetLocaleMiddleware(defaultLocale ?? "en-us"));
+                options.Middleware.Add(new SetLocaleMiddleware(defaultLocale ?? "nl-be"));
 
                 // Autosave State Middleware (saves bot state after each turn)
                 options.Middleware.Add(new AutoSaveStateMiddleware(userState, conversationState));

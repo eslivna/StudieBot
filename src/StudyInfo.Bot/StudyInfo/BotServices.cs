@@ -6,6 +6,7 @@ using Microsoft.Bot.Builder.AI.Luis;
 using Microsoft.Bot.Builder.AI.QnA;
 using Microsoft.Bot.Configuration;
 using StudyInfo.Bot.Middleware.Telemetry;
+using StudyInfo.Logic.Infrastructure;
 
 namespace StudyInfo.Bot.StudyInfo
 {
@@ -15,7 +16,7 @@ namespace StudyInfo.Bot.StudyInfo
         /// Initializes a new instance of the <see cref="BotServices"/> class.
         /// </summary>
         /// <param name="botConfiguration">The <see cref="BotConfiguration"/> instance for the bot.</param>
-        public BotServices(BotConfiguration botConfiguration)
+        public BotServices(BotConfiguration botConfiguration, AppSettings appsettings)
         {
             foreach (var service in botConfiguration.Services)
             {
@@ -62,7 +63,7 @@ namespace StudyInfo.Bot.StudyInfo
                             }
 
                             var dispatchApp = new LuisApplication(dispatch.AppId, dispatch.AuthoringKey, dispatch.GetEndpoint());
-                            DispatchRecognizer = new TelemetryLuisRecognizer(dispatchApp);
+                            DispatchRecognizer = new TelemetryLuisRecognizer(dispatchApp, new LuisPredictionOptions() { BingSpellCheckSubscriptionKey = appsettings.SpellCheckConfiguration.ApiKey, SpellCheck = true });
                             break;
                         }
 

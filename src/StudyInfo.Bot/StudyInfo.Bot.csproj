@@ -43,6 +43,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>CancelStrings.resx</DependentUpon>
     </Compile>
+    <Compile Update="Dialogs\CourseInfo\Resources\CourseStrings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CourseStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Dialogs\EndConversation\Resources\EndConversationStrings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>EndConversationStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Dialogs\EnrolmentFee\Resources\EnrolmentFeeStrings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>EnrolmentFeeStrings.resx</DependentUpon>
+    </Compile>
     <Compile Update="Dialogs\Escalate\Resources\EscalateString.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -53,11 +68,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>MainStrings.resx</DependentUpon>
     </Compile>
-    <Compile Update="Dialogs\Teacher\Resources\TeacherString.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>TeacherString.resx</DependentUpon>
-    </Compile>
   </ItemGroup>
 
 
@@ -65,6 +75,18 @@
     <EmbeddedResource Update="Dialogs\Cancel\Resources\CancelStrings.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>CancelStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Dialogs\CourseInfo\Resources\CourseStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CourseStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Dialogs\EndConversation\Resources\EndConversationStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EndConversationStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Dialogs\EnrolmentFee\Resources\EnrolmentFeeStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EnrolmentFeeStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Dialogs\Escalate\Resources\EscalateString.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -74,20 +96,12 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>MainStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Dialogs\Teacher\Resources\TeacherString.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>TeacherString.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
     <None Update="*.bot">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Dialogs\CourseInfo\Resources\" />
   </ItemGroup>
 
   <ItemGroup>

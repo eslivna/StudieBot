@@ -16,7 +16,7 @@ namespace StudyInfo.Bot.Middleware
 
         public async Task OnTurnAsync(ITurnContext context, NextDelegate next, CancellationToken cancellationToken = default(CancellationToken))
         {
-            var cultureInfo = context.Activity.Locale != null ? new CultureInfo(context.Activity.Locale) : new CultureInfo(defaultLocale);
+            var cultureInfo = string.IsNullOrEmpty(context.Activity.Locale) ? new CultureInfo(defaultLocale) : new CultureInfo(context.Activity.Locale);
 
             CultureInfo.CurrentUICulture = CultureInfo.CurrentCulture = cultureInfo;
 

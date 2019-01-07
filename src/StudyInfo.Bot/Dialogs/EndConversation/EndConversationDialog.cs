@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace StudyInfo.Bot.Dialogs.CourseInfo
+namespace StudyInfo.Bot.Dialogs.EndConversation
 {
-    public class CourseInfoResponse
+    public class EndConversationDialog
     {
     }
 }

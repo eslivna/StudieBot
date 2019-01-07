@@ -61,6 +61,15 @@ namespace StudyInfo.Bot.Dialogs.Main.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string ASK_INFO {
+            get {
+                return ResourceManager.GetString("ASK_INFO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ok, let&apos;s start over..
         /// </summary>
         public static string CANCELLED {
@@ -115,60 +124,6 @@ namespace StudyInfo.Bot.Dialogs.Main.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Test LUIS.
-        /// </summary>
-        public static string HELP_BTN_TEXT_1 {
-            get {
-                return ResourceManager.GetString("HELP_BTN_TEXT_1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Test QnA Maker.
-        /// </summary>
-        public static string HELP_BTN_TEXT_2 {
-            get {
-                return ResourceManager.GetString("HELP_BTN_TEXT_2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Learn more.
-        /// </summary>
-        public static string HELP_BTN_TEXT_3 {
-            get {
-                return ResourceManager.GetString("HELP_BTN_TEXT_3", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Talk to a human.
-        /// </summary>
-        public static string HELP_BTN_VALUE_1 {
-            get {
-                return ResourceManager.GetString("HELP_BTN_VALUE_1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to What is the Enterprise Bot Template?.
-        /// </summary>
-        public static string HELP_BTN_VALUE_2 {
-            get {
-                return ResourceManager.GetString("HELP_BTN_VALUE_2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0.
-        /// </summary>
-        public static string HELP_BTN_VALUE_3 {
-            get {
-                return ResourceManager.GetString("HELP_BTN_VALUE_3", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to This card can be used to display information to help your user interact with your bot. The buttons below can be used for sample queries or links to external sites..
         /// </summary>
         public static string HELP_TEXT {
@@ -192,6 +147,24 @@ namespace StudyInfo.Bot.Dialogs.Main.Resources {
         public static string INTRO_PATH {
             get {
                 return ResourceManager.GetString("INTRO_PATH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string INTRODUCTION {
+            get {
+                return ResourceManager.GetString("INTRODUCTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} {1} ENG.
+        /// </summary>
+        public static string TEACHER {
+            get {
+                return ResourceManager.GetString("TEACHER", resourceCulture);
             }
         }
     }
