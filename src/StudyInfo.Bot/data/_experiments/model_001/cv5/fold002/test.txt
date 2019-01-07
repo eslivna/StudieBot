@@ -1,0 +1,27 @@
+Label	Weight	Text
+l_Training Courses	3,857143	hoe doe ik dit
+l_Training Courses	3,857143	2de jaar 1ste semester
+l_Training Courses	3,857143	welke docent krijg ik voor het vak wiskunde
+l_Training Courses	3,857143	ik heb wat hulp nodig
+l_Training Courses	3,857143	hoeveel tijd moet ik studeren voor wiskunde
+l_Training Courses	3,857143	stop
+l_Training Courses	3,857143	hoe kan ik aan hulp geraken
+l_Training Courses	3,857143	cancel
+l_Training Courses	3,857143	welke vakken 1ste semester derde jaar
+l_Training Courses	3,857143	hoeveel is het inschrijvingsgeld
+l_Training Courses	3,857143	welke leerkracht geeft math4it
+l_Training Courses	3,857143	ik wil een overzicht van alle vakken van het eerste jaar
+l_Training Courses	3,857143	kan ik wiskunde studeren op 10 uur
+l_Training Courses	3,857143	vakken 2de jaar
+q_General	4,5	Inschrijvingsgeld bijna-beursstudent
+q_General	4,5	studiekosten niet-beursstudent
+q_General	4,5	Studiekosten bijna-beursstudent
+q_General	4,5	Inschrijvingsgeld bijna-beursstudent
+q_General	4,5	studiekosten niet-beursstudent
+q_General	4,5	Studiekosten bijna-beursstudent
+q_General	4,5	Inschrijvingsgeld bijna-beursstudent
+q_General	4,5	studiekosten niet-beursstudent
+q_General	4,5	Studiekosten bijna-beursstudent
+q_General	4,5	Inschrijvingsgeld bijna-beursstudent
+q_General	4,5	studiekosten niet-beursstudent
+q_General	4,5	Studiekosten bijna-beursstudent

@@ -59,5 +59,14 @@ namespace StudyInfo.Bot.Dialogs.EnrolmentFee.Resources {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string ASK_STUDENT_TYPE {
+            get {
+                return ResourceManager.GetString("ASK_STUDENT_TYPE", resourceCulture);
+            }
+        }
     }
 }

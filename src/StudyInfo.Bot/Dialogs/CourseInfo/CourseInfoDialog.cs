@@ -7,8 +7,10 @@ using StudyInfo.Bot.Dialogs.Shared;
 using StudyInfo.Bot.StudyInfo;
 using StudyInfo.Logic.Data;
 using System.Linq;
-using StudyInfo.Logic.Data.Domain.Course;
+using Microsoft.Bot.Schema;
+using StudyInfo.Bot.Dialogs.CourseInfo.Resources;
 using System;
+using StudyInfo.Logic.Domain.Course;
 
 namespace StudyInfo.Bot.Dialogs.CourseInfo
 {
@@ -39,10 +41,18 @@ namespace StudyInfo.Bot.Dialogs.CourseInfo
             string[] year = _state.Year; ;
             var courseEntities = await _databaseService.GetAll<CourseDataEntity>();
             var result = new List<CourseDataEntity>();
+
             if (year == null)
                 year = new string[] { "1" };
+
             if (year[0] != null && semester[0] != null)
+            {
                 result = courseEntities.Where(c => c.AcademicYear == int.Parse(year[0]) && c.Term == int.Parse(semester[0])).ToList();
+            }
+            else if (semester[0] == null)
+            {
+                result = courseEntities.Where(c => c.AcademicYear == int.Parse(year[0])).ToList();
+            }
 
             var courseNames = string.Join("<br> ", result.Select(x => x.Course.ToString()).ToArray());
 
@@ -54,16 +64,37 @@ namespace StudyInfo.Bot.Dialogs.CourseInfo
                     result.Count,
                     courseNames
                 });
+
+            var reply = GetSuggestions(sc, result.Select(x => x.Course.ToString()).ToList());
+
+            await Task.Delay(3000);
+            await sc.Context.SendActivityAsync(reply, cancellationToken);
+
             return await sc.EndDialogAsync();
         }
 
-        private class DialogIds
+        private Activity GetSuggestions(WaterfallStepContext sc, List<string> courseNames)
         {
-            public const string NamePrompt = "namePrompt";
-            public const string EmailPrompt = "emailPrompt";
-            public const string LocationPrompt = "locationPrompt";
+            //Get random indexes to get random course suggestions
+            var random = new Random();
+            var indexes = new int[3];
+            for (var i = 0; i < 3; i++)
+            {
+                indexes[i] = random.Next(0, courseNames.Count);
+            }
+
+            var reply = sc.Context.Activity.CreateReply(CourseStrings.HINTS, sc.Context.Activity.Locale);
+            reply.SuggestedActions = new SuggestedActions()
+            {
+                Actions = new List<CardAction>()
+                {
+                    new CardAction() { Title = $"Cursusinhoud {courseNames[indexes[0]]}", Type = ActionTypes.ImBack, Value = $"Cursusinhoud {courseNames[indexes[0]]}" },
+                    new CardAction() { Title = $"Welke docent geeft {courseNames[indexes[1]]}", Type = ActionTypes.ImBack, Value = $"Welke docent geeft {courseNames[indexes[1]]}" },
+                    new CardAction() { Title = $"Studietijd {courseNames[indexes[2]]}" , Type = ActionTypes.ImBack, Value = $"Hoeveel tijd heb ik nodig om {courseNames[indexes[2]]} te studeren" },
+                },
+            };
+
+            return reply;
         }
-
-
     }
 }

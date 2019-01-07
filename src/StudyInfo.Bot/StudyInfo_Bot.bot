@@ -12,16 +12,6 @@
         },
         {
             "type": "luis",
-            "name": "HoGentGeneral",
-            "appId": "8a2716c3-6d13-4e6a-a237-6c282b6ad7b4",
-            "authoringKey": "ad934e05a6ef45669fc8867113c29b3e",
-            "subscriptionKey": "",
-            "version": "0.1",
-            "region": "westeurope",
-            "id": "7"
-        },
-        {
-            "type": "luis",
             "name": "Training Courses",
             "appId": "7e9e1e64-fb89-4fda-be38-867b7bc25698",
             "authoringKey": "ad934e05a6ef45669fc8867113c29b3e",
@@ -47,7 +37,6 @@
             "version": "Dispatch",
             "region": "westeurope",
             "serviceIds": [
-                "7",
                 "50",
                 "1"
             ],

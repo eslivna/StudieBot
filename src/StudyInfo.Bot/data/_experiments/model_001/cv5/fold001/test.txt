@@ -1,0 +1,27 @@
+Label	Weight	Text
+l_Training Courses	3,857143	contacteer hogent
+l_Training Courses	3,857143	ik heb assistentie nodig
+l_Training Courses	3,857143	hoeveel moet ik voor de opleiding betalen
+l_Training Courses	3,857143	wie kan er mij helpen
+l_Training Courses	3,857143	wat zijn de studiekosten
+l_Training Courses	3,857143	stop bot
+l_Training Courses	3,857143	stop applicatie
+l_Training Courses	3,857143	gewicht analyse 1
+l_Training Courses	3,857143	is er een leerkracht beschikbaar om mee te praten
+l_Training Courses	3,857143	welke leerkracht geeft het vak wiskunde
+l_Training Courses	3,857143	hoeveel ga ik moeten studeren voor wiskunde
+l_Training Courses	3,857143	annuleer
+l_Training Courses	3,857143	ik wil alle vakken van het eerste semester weten
+l_Training Courses	3,857143	ik wil graag een overzicht van alle vakken in de 2de semester
+q_General	6,75	Niet-beursstudent
+q_General	3,375	inschrijvingsgeld niet-beursstudent
+q_General	3,375	Wat bedraagt het inschrijvingsgeld voor een beursstudent
+q_General	6,75	Niet-beursstudent
+q_General	3,375	inschrijvingsgeld niet-beursstudent
+q_General	3,375	Wat bedraagt het inschrijvingsgeld voor een beursstudent
+q_General	6,75	Niet-beursstudent
+q_General	3,375	inschrijvingsgeld niet-beursstudent
+q_General	3,375	Wat bedraagt het inschrijvingsgeld voor een beursstudent
+q_General	6,75	Niet-beursstudent
+q_General	3,375	inschrijvingsgeld niet-beursstudent
+q_General	3,375	Wat bedraagt het inschrijvingsgeld voor een beursstudent

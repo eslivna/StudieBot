@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace StudyInfo.Bot.Dialogs.EndConversation.Resources {
+namespace StudyInfo.Bot.Dialogs.AskCatalogus.Resources {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace StudyInfo.Bot.Dialogs.EndConversation.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class EndConversationStrings {
+    public class AskCatalogusStrings {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal EndConversationStrings() {
+        internal AskCatalogusStrings() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace StudyInfo.Bot.Dialogs.EndConversation.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("StudyInfo.Bot.Dialogs.EndConversation.Resources.EndConversationStrings", typeof(EndConversationStrings).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("StudyInfo.Bot.Dialogs.AskCatalogus.Resources.AskCatalogusStrings", typeof(AskCatalogusStrings).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

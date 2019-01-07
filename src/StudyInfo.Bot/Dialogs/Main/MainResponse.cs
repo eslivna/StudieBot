@@ -61,7 +61,12 @@ namespace StudyInfo.Bot.Dialogs.Main
                          inputHint: InputHints.IgnoringInput)
                 },
                 { ResponseIds.Help, (context, data) => BuildHelpCard(context, data) },
-                { ResponseIds.Intro, (context, data) => BuildIntroCard(context, data) }
+                { ResponseIds.Intro, (context, data) => BuildIntroCard(context, data) },
+                {ResponseIds.StudyTime, (conext, data) =>
+                MessageFactory.Text(
+                    text: string.Format(MainStrings.STUDYRESPONSE, data.Course, data.TotalStudyTime),
+                    inputHint: InputHints.AcceptingInput)
+                }
             }
         };
 
@@ -115,6 +120,7 @@ namespace StudyInfo.Bot.Dialogs.Main
             public const string Help = "help";
             public const string Intro = "intro";
             public const string AskInfo = "info";
+            public const string StudyTime = "studyTime";
         }
     }
 }

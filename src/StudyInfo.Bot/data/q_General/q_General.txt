@@ -1,0 +1,22 @@
+Hoe is de opleiding opgebouwd ? 
+Beursstudent
+Wat bedraagt het inschrijvingsgeld voor een beursstudent
+Inschrijvingsgeld beursstudent
+studiekosten beursstudent
+Niet-beursstudent
+niet beursstudent
+Wat bedraagt het inschijvingsgeld voor een niet-beursstudent
+inschrijvingsgeld niet-beursstudent
+
+
+studiekosten niet-beursstudent
+Bijna-beursstudent
+bijna beursstudent
+Wat bedraagt het inschrijvingsgeld voor een bijna-beursstudent 
+Inschrijvingsgeld bijna-beursstudent
+
+
+Studiekosten bijna-beursstudent
+Wie heeft deze bot gemaakt ?
+
+

@@ -1,0 +1,66 @@
+Label	Weight	Text
+l_Training Courses	1	contacteer hogent
+l_Training Courses	1	ik heb assistentie nodig
+l_Training Courses	1	hoeveel moet ik voor de opleiding betalen
+l_Training Courses	1	wie kan er mij helpen
+l_Training Courses	1	wat zijn de studiekosten
+l_Training Courses	1	stop bot
+l_Training Courses	1	stop applicatie
+l_Training Courses	1	gewicht analyse 1
+l_Training Courses	1	is er een leerkracht beschikbaar om mee te praten
+l_Training Courses	1	welke leerkracht geeft het vak wiskunde
+l_Training Courses	1	hoeveel ga ik moeten studeren voor wiskunde
+l_Training Courses	1	annuleer
+l_Training Courses	1	ik wil alle vakken van het eerste semester weten
+l_Training Courses	1	ik wil graag een overzicht van alle vakken in de 2de semester
+l_Training Courses	1	hoe doe ik dit
+l_Training Courses	1	2de jaar 1ste semester
+l_Training Courses	1	welke docent krijg ik voor het vak wiskunde
+l_Training Courses	1	ik heb wat hulp nodig
+l_Training Courses	1	hoeveel tijd moet ik studeren voor wiskunde
+l_Training Courses	1	stop
+l_Training Courses	1	hoe kan ik aan hulp geraken
+l_Training Courses	1	cancel
+l_Training Courses	1	welke vakken 1ste semester derde jaar
+l_Training Courses	1	hoeveel is het inschrijvingsgeld
+l_Training Courses	1	welke leerkracht geeft math4it
+l_Training Courses	1	ik wil een overzicht van alle vakken van het eerste jaar
+l_Training Courses	1	kan ik wiskunde studeren op 10 uur
+l_Training Courses	1	vakken 2de jaar
+l_Training Courses	1	cursussen 2de jaar
+l_Training Courses	1	welke vakken worden er gegeven in het eerste semester van het tweede jaar
+l_Training Courses	1	kan een medewerker van hogent mij helpen
+l_Training Courses	1	alle vakken 3de jaar
+l_Training Courses	1	studiepunten computerarchitectuur
+l_Training Courses	1	help
+l_Training Courses	1	wie is de lesgever van wiskunde
+l_Training Courses	1	ik wil een overzicht van alle vakken
+l_Training Courses	1	ga weg
+l_Training Courses	1	ik wil met een echte persoon praten
+l_Training Courses	1	kan iemand mij helpen
+l_Training Courses	1	hoeveel tijd moet ik voorzien voor wiskunde
+l_Training Courses	1	leerkracht math4it
+l_Training Courses	1	wat is het gewicht van analyse1
+l_Training Courses	1	studiegeld
+l_Training Courses	1	gewicht wiskunde
+l_Training Courses	1	laat maar
+l_Training Courses	1	vakken eerste semester
+l_Training Courses	1	docent wiskunde
+l_Training Courses	1	is studeren aan hogent duur
+l_Training Courses	1	hoeveel studiepunten heeft het vak analyse i
+l_Training Courses	1	hoeveel bedraagt het inschrijvingsgeld
+l_Training Courses	1	1ste semester 2de jaar
+l_Training Courses	1	studiekosten
+l_Training Courses	1	wat is de studieomvang van probleemoplossend denken 1
+l_Training Courses	1	kan ik iemand van het secretariaat spreken
+q_General	8,307693	Niet-beursstudent
+q_General	4,153846	inschrijvingsgeld niet-beursstudent
+q_General	4,153846	Wat bedraagt het inschrijvingsgeld voor een beursstudent
+q_General	4,153846	Inschrijvingsgeld bijna-beursstudent
+q_General	4,153846	studiekosten niet-beursstudent
+q_General	4,153846	Studiekosten bijna-beursstudent
+q_General	8,307693	Bijna-beursstudent
+q_General	4,153846	Wat bedraagt het inschijvingsgeld voor een niet-beursstudent
+q_General	4,153846	studiekosten beursstudent
+q_General	4,153846	Beursstudent
+q_General	4,153846	Wie heeft deze bot gemaakt ?

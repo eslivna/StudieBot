@@ -1,0 +1,27 @@
+Label	Weight	Text
+l_Training Courses	3,857143	leerkracht math4it
+l_Training Courses	3,857143	wat is het gewicht van analyse1
+l_Training Courses	3,857143	studiegeld
+l_Training Courses	3,857143	gewicht wiskunde
+l_Training Courses	3,857143	laat maar
+l_Training Courses	3,857143	vakken eerste semester
+l_Training Courses	3,857143	docent wiskunde
+l_Training Courses	3,857143	is studeren aan hogent duur
+l_Training Courses	3,857143	hoeveel studiepunten heeft het vak analyse i
+l_Training Courses	3,857143	hoeveel bedraagt het inschrijvingsgeld
+l_Training Courses	3,857143	1ste semester 2de jaar
+l_Training Courses	3,857143	studiekosten
+l_Training Courses	3,857143	wat is de studieomvang van probleemoplossend denken 1
+l_Training Courses	3,857143	kan ik iemand van het secretariaat spreken
+q_General	4,5	studiekosten beursstudent
+q_General	4,5	Beursstudent
+q_General	4,5	Wie heeft deze bot gemaakt ?
+q_General	4,5	studiekosten beursstudent
+q_General	4,5	Beursstudent
+q_General	4,5	Wie heeft deze bot gemaakt ?
+q_General	4,5	studiekosten beursstudent
+q_General	4,5	Beursstudent
+q_General	4,5	Wie heeft deze bot gemaakt ?
+q_General	4,5	studiekosten beursstudent
+q_General	4,5	Beursstudent
+q_General	4,5	Wie heeft deze bot gemaakt ?

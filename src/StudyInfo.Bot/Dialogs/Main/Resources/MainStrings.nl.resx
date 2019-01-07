@@ -129,6 +129,9 @@
   <data name="CONFUSED" xml:space="preserve">
     <value>Oei ! Het lijkt dat ik hier geen antwoord op kan geven 😥</value>
   </data>
+  <data name="COURSE_HINTS" xml:space="preserve">
+    <value>Wil je nog extra dingen weten over het vak? </value>
+  </data>
   <data name="ERROR" xml:space="preserve">
     <value>Oeps! Het lijkt erop dat er iets mis is gelopen</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="INTRO_PATH" xml:space="preserve">
     <value>.\Dialogs\Main\Resources\Intro.nl.json</value>
+  </data>
+  <data name="STUDYRESPONSE" xml:space="preserve">
+    <value>Voor het vak {0} kan je best {1} uur uitrekenen."</value>
   </data>
   <data name="TEACHER" xml:space="preserve">
     <value>Het vak {0} wordt gegeven door {1}</value>

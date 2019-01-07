@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -8,15 +9,16 @@ using Microsoft.Bot.Schema;
 using Newtonsoft.Json;
 using StudyInfo.Bot.Constants;
 using StudyInfo.Bot.Dialogs.CourseInfo;
+using StudyInfo.Bot.Dialogs.EnrolmentFee;
 using StudyInfo.Bot.Dialogs.Escalate;
 using StudyInfo.Bot.Dialogs.Main;
+using StudyInfo.Bot.Dialogs.Main.Resources;
 using StudyInfo.Bot.Dialogs.Shared;
 using StudyInfo.Bot.Dialogs.Teacher.Resources;
-using StudyInfo.Bot.Extensions;
 using StudyInfo.Bot.Models;
 using StudyInfo.Bot.StudyInfo;
 using StudyInfo.Logic.Data;
-using StudyInfo.Logic.Data.Domain.Course;
+using StudyInfo.Logic.Domain.Course;
 
 namespace StudyInfo.Bot.Dialogs.Dispatcher
 {
@@ -48,6 +50,7 @@ namespace StudyInfo.Bot.Dialogs.Dispatcher
             AddDialog(new EscalateDialog(_services, _databaseService));
             AddDialog(new TeacherDialog(_services, _databaseService));
             AddDialog(new CourseInfoDialog(_services, _courseAccessor, _databaseService));
+            AddDialog(new EnrolmentFeeDialog(_services, _databaseService));
         }
 
         protected override async Task OnStartAsync(DialogContext dc, CancellationToken cancellationToken = default(CancellationToken))
@@ -79,7 +82,7 @@ namespace StudyInfo.Bot.Dialogs.Dispatcher
                 else
                 {
                     var result = await luisService.RecognizeAsync<CourseModel>(dc, true, CancellationToken.None);
-                    
+
 
                     if (result.Entities.Course != null)
                         _courseState.Courses = result.Entities?.Course[0];
@@ -111,12 +114,30 @@ namespace StudyInfo.Bot.Dialogs.Dispatcher
                                 {
                                     var courseEntity = await _databaseService.Get<CourseDataEntity>(_courseState.Courses[0]);
                                     await _responder.ReplyWith(dc.Context, ResponseIdFor.NameTeacher, new { courseEntity.Course, courseEntity.Teacher });
+                                    var suggestions = GetCourseSuggestions(dc, _courseState.Courses[0]);
+                                    await Task.Delay(2000);
+                                    await dc.Context.SendActivityAsync(suggestions, cancellationToken);
                                 }
                                 break;
                             }
                         case CourseModel.Intent.GetAllCourses:
                             {
                                 await dc.BeginDialogAsync(nameof(CourseInfoDialog));
+                                break;
+                            }
+                        case CourseModel.Intent.Get_Enrolment_Fee:
+                            {
+                                var reply = dc.Context.Activity.CreateReply("Het studiegeld hangt af van of je al dan niet in aanmerking komt voor een studiebeurs. Welke type student ben jij ?");
+                                reply.SuggestedActions = new SuggestedActions()
+                                {
+                                    Actions = new List<CardAction>()
+                                    {
+                                        new CardAction() { Title = "Beursstudent", Type = ActionTypes.ImBack, Value = "Ik ben een beursstudent" },
+                                        new CardAction() { Title = "Niet-beursstudentt", Type = ActionTypes.ImBack, Value = "Ik ben een niet-beursstudent" },
+                                        new CardAction() { Title = "Bijna-beurstudent", Type = ActionTypes.ImBack, Value = "Ik ben een bijna-beurstudent" },
+                                    },
+                                };
+                                await dc.Context.SendActivityAsync(reply, cancellationToken);
                                 break;
                             }
 
@@ -129,11 +150,12 @@ namespace StudyInfo.Bot.Dialogs.Dispatcher
 
                         case CourseModel.Intent.Get_Study_Time:
                             {
-                                // send help response
-                                await dc.BeginDialogAsync(nameof(TeacherDialog));
+                                var courseEntity = await _databaseService.Get<CourseDataEntity>(_courseState.Courses[0]);
+                                var res = JsonConvert.DeserializeObject<StudyTime>(courseEntity.StudyTime);
+                                await _responder.ReplyWith(dc.Context, MainResponses.ResponseIds.StudyTime, new { courseEntity.Course, res.TotalStudyTime });
                                 break;
                             }
-                        case CourseModel.Intent.Escalte:
+                        case CourseModel.Intent.Escalate:
                             {
                                 // start escalate dialog
                                 await dc.BeginDialogAsync(nameof(EscalateDialog));
@@ -179,9 +201,19 @@ namespace StudyInfo.Bot.Dialogs.Dispatcher
             // The active dialog's stack ended with a complete status
             await _responder.ReplyWith(dc.Context, ResponseIdFor.Completed);
         }
-    }
-    public class CardResponse
-    {
-        public string Text { get; set; }
+
+        private Activity GetCourseSuggestions(DialogContext dc, string course)
+        {
+            var reply = dc.Context.Activity.CreateReply(MainStrings.COURSE_HINTS, dc.Context.Activity.Locale);
+            reply.SuggestedActions = new SuggestedActions()
+            {
+                Actions = new List<CardAction>()
+                {
+                    new CardAction() { Title = $"Cursusinhoud {course}", Type = ActionTypes.ImBack, Value = $"Cursusinhoud {course}" },
+                    new CardAction() { Title = $"Studietijd {course}" , Type = ActionTypes.ImBack, Value = $"Studietijd {course}" },
+                },
+            };
+            return reply;
+        }
     }
 }

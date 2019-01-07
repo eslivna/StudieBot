@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using StudyInfo.Logic.Data;
-using StudyInfo.Logic.Data.Domain.Course;
+using StudyInfo.Logic.Domain.Course;
 
 namespace StudyInfo.ConsoleApp.StorageEngine
 {

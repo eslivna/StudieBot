@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
-using StudyInfo.Logic.Data.Domain.Course;
+using StudyInfo.Logic.Domain.Course;
 
 namespace StudyInfo.ConsoleApp.SampleData
 {
@@ -10,21 +10,21 @@ namespace StudyInfo.ConsoleApp.SampleData
         {
             //Courses first year
             new CourseDataEntity(){RowKey="Computerarchitectuur", Course = "Computerarchitectuur", AcademicYear=1, Term=1, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,6,18,51))},
-            new CourseDataEntity(){RowKey="Computernetwerken1", Course = "Computernetwerken I", AcademicYear=1, Term=2, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,6,30,64))},
-            new CourseDataEntity(){RowKey="OOProgrammeren1", Course = "OO Programmeren I",AcademicYear=1, Term=1, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,12,48,65))},
-            new CourseDataEntity(){RowKey="Analyse1", Course = "Analyse I", AcademicYear=1, Term=1,Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,8,16,51))},
-            new CourseDataEntity(){RowKey="OOOntwerpen1", Course = "OO Ontwerpen I",AcademicYear=1, Term=1, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,18,18,64))},
-            new CourseDataEntity(){RowKey="Databanken1", Course = "Databanken I", AcademicYear=1, Term=1,Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,12,24,64))},
-            new CourseDataEntity(){RowKey="Webapplicaties1", Course = "Webapplicaties I", AcademicYear=1, Term=1,Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,0,24,51))},
-            new CourseDataEntity(){RowKey="PartimFinancieelManagement", Course = "Partim Financieel Management",AcademicYear=1, Term=2, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,12,12,64))},
-            new CourseDataEntity(){RowKey="PartimStrategischManagement", Course = "Partim Strategisch Management",AcademicYear=1, Term=2, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,12,12,26))},
+            new CourseDataEntity(){RowKey="Computernetwerken I", Course = "Computernetwerken I", AcademicYear=1, Term=2, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,6,30,64))},
+            new CourseDataEntity(){RowKey="OO Programmeren I", Course = "OO Programmeren I",AcademicYear=1, Term=1, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,12,48,65))},
+            new CourseDataEntity(){RowKey="Analyse I", Course = "Analyse I", AcademicYear=1, Term=1,Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,8,16,51))},
+            new CourseDataEntity(){RowKey="OO Ontwerpen I", Course = "OO Ontwerpen I",AcademicYear=1, Term=1, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,18,18,64))},
+            new CourseDataEntity(){RowKey="Databanken I", Course = "Databanken I", AcademicYear=1, Term=1,Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,12,24,64))},
+            new CourseDataEntity(){RowKey="Webapplicaties I", Course = "Webapplicaties I", AcademicYear=1, Term=1,Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,0,24,51))},
+            new CourseDataEntity(){RowKey="Partim Financieel Management", Course = "Partim Financieel Management",AcademicYear=1, Term=2, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,12,12,64))},
+            new CourseDataEntity(){RowKey="Partim Strategisch Management", Course = "Partim Strategisch Management",AcademicYear=1, Term=2, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,12,12,26))},
             new CourseDataEntity(){RowKey="Math4IT", Course = "Math4IT",AcademicYear=1, Term=1, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,0,48,52))},
-            new CourseDataEntity(){RowKey="Probleemoplossenddenken1", Course = "Probleemoplossend denken I",AcademicYear=1, Term=2, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,0,48,77))},
-            new CourseDataEntity(){RowKey="InternationaleCommunicatie1", Course = "Internationale Communicatie I",AcademicYear=1, Term=1, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(12,0,12,51))},
-            new CourseDataEntity(){RowKey="i2Talent", Course = "i¹Talent",AcademicYear=1, Term=2, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(12,0,12,51))},
-            new CourseDataEntity(){RowKey="Projecten-workshops1", Course = "Projecten-workshops I", AcademicYear=1, Term=2,Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(36,12,0,102))},
-            new CourseDataEntity(){RowKey="OOProgrammeren2", Course = "OO Programmeren II",AcademicYear=1, Term=2, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,12,48,65))},
-            new CourseDataEntity(){RowKey="Webapplicaties2", Course = "Webapplicaties II", AcademicYear=1, Term=2,Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,0,63,64))},
+            new CourseDataEntity(){RowKey="Probleemoplossend denken I", Course = "Probleemoplossend denken I",AcademicYear=1, Term=2, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,0,48,77))},
+            new CourseDataEntity(){RowKey="Internationale Communicatie I", Course = "Internationale Communicatie I",AcademicYear=1, Term=1, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(12,0,12,51))},
+            new CourseDataEntity(){RowKey="i¹Talent", Course = "i¹Talent",AcademicYear=1, Term=2, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(12,0,12,51))},
+            new CourseDataEntity(){RowKey="Projecten-workshops I", Course = "Projecten-workshops I", AcademicYear=1, Term=2,Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(36,12,0,102))},
+            new CourseDataEntity(){RowKey="OO Programmeren II", Course = "OO Programmeren II",AcademicYear=1, Term=2, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,12,48,65))},
+            new CourseDataEntity(){RowKey="Webapplicaties II", Course = "Webapplicaties II", AcademicYear=1, Term=2,Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,0,63,64))},
 
             //Courses second year
             new CourseDataEntity(){RowKey="Bedrijfsmanagement", Course = "Bedrijfsmanagement",AcademicYear=2, Term=1, Teacher="Esli Van Acoleyen", StudyTime= JsonConvert.SerializeObject(new StudyTime(0,6,18,51))},

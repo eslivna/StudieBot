@@ -21,7 +21,8 @@ namespace StudyInfo.Bot.Models
             Get_Number_Of_Credits, 
             Get_Study_Time, 
             GetAllCourses,
-            Escalte, 
+            Get_Enrolment_Fee,
+            Escalate, 
             Cancel,
             Help,
             None

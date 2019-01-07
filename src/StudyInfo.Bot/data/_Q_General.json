@@ -1,0 +1,75 @@
+{
+  "qnaDocuments": [
+    {
+      "id": 1,
+      "answer": "De opleiding is opgebouwd rond zeven leerlijnen:   \n\n- Applicatieontwikkeling   \n\n- Netwerken en systeembeheer \n\n- Gegevensbehandeling en –beheer \n\n-Probleemanalyserend denken en business - Communicatie\n\n- Probleemonderzoeken en oplossend denken \n\n- Professionele en individuele groei",
+      "source": "Editorial",
+      "questions": [
+        "Hoe is de opleiding opgebouwd ? "
+      ],
+      "metadata": [],
+      "alternateQuestionClusters": [],
+      "changeStatus": "Update",
+      "kbId": "2056b4e0-d3e5-4c9e-8bb7-7828e0e8ab57"
+    },
+    {
+      "id": 2,
+      "answer": "&lt;span style=\"color: rgb(102, 102, 102); font-family: &amp;quot;PT Sans&amp;quot;, sans-serif; font-size: 13px; letter-spacing: normal;\"&gt;Schrijf je je in voor een modeltraject van 60 studiepunten (een volledig studiejaar), dan is het studiegeld voor een beursstudent in&amp;nbsp; 2018-2019:&amp;nbsp;&lt;/span&gt;&lt;span style=\"color: rgb(102, 102, 102); font-family: &amp;quot;PT Sans&amp;quot;, sans-serif; font-size: 13px; letter-spacing: normal;\"&gt;€ 108,80&lt;/span&gt;",
+      "source": "Editorial",
+      "questions": [
+        "Beursstudent",
+        "Wat bedraagt het inschrijvingsgeld voor een beursstudent?",
+        "Inschrijvingsgeld beursstudent",
+        "studiekosten beursstudent"
+      ],
+      "metadata": [],
+      "alternateQuestionClusters": [],
+      "changeStatus": "Update",
+      "kbId": "2056b4e0-d3e5-4c9e-8bb7-7828e0e8ab57"
+    },
+    {
+      "id": 3,
+      "answer": "&lt;span style=\"color: rgb(102, 102, 102); font-family: &amp;quot;PT Sans&amp;quot;, sans-serif; font-size: 13px; letter-spacing: normal;\"&gt;Schrijf je je in voor een modeltraject van 60 studiepunten (een volledig studiejaar), dan is het studiegeld voor een beursstudent in&amp;nbsp; 2018-2019:&amp;nbsp;&lt;/span&gt;&lt;span style=\"color: rgb(102, 102, 102); font-family: &amp;quot;PT Sans&amp;quot;, sans-serif; font-size: 13px; letter-spacing: normal;\"&gt;<span style=\"color: rgb(102, 102, 102); font-family: &quot;PT Sans&quot;, sans-serif; font-size: 13px; letter-spacing: normal;\">€ 922,30</span>&lt;/span&gt;",
+      "source": "Editorial",
+      "questions": [
+        "Niet-beursstudent",
+        "niet beursstudent",
+        "Wat bedraagt het inschijvingsgeld voor een niet-beursstudent?",
+        "inschrijvingsgeld niet-beursstudent\n\n",
+        "studiekosten niet-beursstudent"
+      ],
+      "metadata": [],
+      "alternateQuestionClusters": [],
+      "changeStatus": "Update",
+      "kbId": "2056b4e0-d3e5-4c9e-8bb7-7828e0e8ab57"
+    },
+    {
+      "id": 4,
+      "answer": "&lt;span style=\"color: rgb(102, 102, 102); font-family: &amp;quot;PT Sans&amp;quot;, sans-serif; font-size: 13px; letter-spacing: normal;\"&gt;Schrijf je je in voor een modeltraject van 60 studiepunten (een volledig studiejaar), dan is het studiegeld voor een beursstudent in&amp;nbsp; 2018-2019:&amp;nbsp;&lt;/span&gt;&lt;span style=\"color: rgb(102, 102, 102); font-family: &amp;quot;PT Sans&amp;quot;, sans-serif; font-size: 13px; letter-spacing: normal;\"&gt;<span style=\"color: rgb(102, 102, 102); font-family: &quot;PT Sans&quot;, sans-serif; font-size: 13px; letter-spacing: normal;\">€ 484,30</span>&lt;/span&gt;",
+      "source": "Editorial",
+      "questions": [
+        "Bijna-beursstudent",
+        "bijna beursstudent",
+        "Wat bedraagt het inschrijvingsgeld voor een bijna-beursstudent ?",
+        "Inschrijvingsgeld bijna-beursstudent\n\n",
+        "Studiekosten bijna-beursstudent"
+      ],
+      "metadata": [],
+      "alternateQuestionClusters": [],
+      "changeStatus": "Update",
+      "kbId": "2056b4e0-d3e5-4c9e-8bb7-7828e0e8ab57"
+    },
+    {
+      "id": 5,
+      "answer": "Deze bot werd gemaakt door Esli als onderdeel van zijn bachelorproef",
+      "source": "Editorial",
+      "questions": [
+        "Wie heeft deze bot gemaakt ?\n\n"
+      ],
+      "metadata": [],
+      "alternateQuestionClusters": [],
+      "changeStatus": "Update",
+      "kbId": "2056b4e0-d3e5-4c9e-8bb7-7828e0e8ab57"
+    }
+  ]
+}

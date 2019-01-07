@@ -4,6 +4,7 @@
     {
       "type": "TextBlock",
       "spacing": "Medium",
+      "size":  "Large",
       "weight": "Bolder",
       "text": "Over wat zou je graag meer informatie hebben?",
       "wrap": true

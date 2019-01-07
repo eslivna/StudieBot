@@ -1,6 +1,6 @@
 ﻿using Microsoft.WindowsAzure.Storage.Table;
 
-namespace StudyInfo.Logic.Data.Domain.Course
+namespace StudyInfo.Logic.Domain.Course
 {
     /// <summary>
     /// The CourseDataEntity class

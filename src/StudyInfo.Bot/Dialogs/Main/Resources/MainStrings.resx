@@ -129,6 +129,9 @@
   <data name="CONFUSED" xml:space="preserve">
     <value>I'm sorry, I'm not able to help with that.</value>
   </data>
+  <data name="COURSE_HINTS" xml:space="preserve">
+    <value />
+  </data>
   <data name="ERROR" xml:space="preserve">
     <value>Sorry, it looks like something went wrong.</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="INTRO_PATH" xml:space="preserve">
     <value>.\Dialogs\Main\Resources\Intro.json</value>
+  </data>
+  <data name="STUDYRESPONSE" xml:space="preserve">
+    <value />
   </data>
   <data name="TEACHER" xml:space="preserve">
     <value>{0} {1} ENG</value>

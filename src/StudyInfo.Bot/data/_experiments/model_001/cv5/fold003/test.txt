@@ -1,0 +1,27 @@
+Label	Weight	Text
+l_Training Courses	3,857143	cursussen 2de jaar
+l_Training Courses	3,857143	welke vakken worden er gegeven in het eerste semester van het tweede jaar
+l_Training Courses	3,857143	kan een medewerker van hogent mij helpen
+l_Training Courses	3,857143	alle vakken 3de jaar
+l_Training Courses	3,857143	studiepunten computerarchitectuur
+l_Training Courses	3,857143	help
+l_Training Courses	3,857143	wie is de lesgever van wiskunde
+l_Training Courses	3,857143	ik wil een overzicht van alle vakken
+l_Training Courses	3,857143	ga weg
+l_Training Courses	3,857143	ik wil met een echte persoon praten
+l_Training Courses	3,857143	kan iemand mij helpen
+l_Training Courses	3,857143	hoeveel tijd moet ik voorzien voor wiskunde
+l_Training Courses	3,857143	leerkracht math4it
+l_Training Courses	3,857143	wat is het gewicht van analyse1
+q_General	6,75	Bijna-beursstudent
+q_General	3,375	Wat bedraagt het inschijvingsgeld voor een niet-beursstudent
+q_General	3,375	studiekosten beursstudent
+q_General	6,75	Bijna-beursstudent
+q_General	3,375	Wat bedraagt het inschijvingsgeld voor een niet-beursstudent
+q_General	3,375	studiekosten beursstudent
+q_General	6,75	Bijna-beursstudent
+q_General	3,375	Wat bedraagt het inschijvingsgeld voor een niet-beursstudent
+q_General	3,375	studiekosten beursstudent
+q_General	6,75	Bijna-beursstudent
+q_General	3,375	Wat bedraagt het inschijvingsgeld voor een niet-beursstudent
+q_General	3,375	studiekosten beursstudent

@@ -97,6 +97,15 @@ namespace StudyInfo.Bot.Dialogs.Main.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string COURSE_HINTS {
+            get {
+                return ResourceManager.GetString("COURSE_HINTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sorry, it looks like something went wrong..
         /// </summary>
         public static string ERROR {
@@ -156,6 +165,15 @@ namespace StudyInfo.Bot.Dialogs.Main.Resources {
         public static string INTRODUCTION {
             get {
                 return ResourceManager.GetString("INTRODUCTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string STUDYRESPONSE {
+            get {
+                return ResourceManager.GetString("STUDYRESPONSE", resourceCulture);
             }
         }
         

@@ -14,6 +14,7 @@
         public const string NamePrompt = "namePrompt";
         public const string NameGreeting = "NameGreeting";
         public const string IntroPrompt = "IntroPrompt";
+        public const string StudyTime = "StudyTime";
     }
 }
 

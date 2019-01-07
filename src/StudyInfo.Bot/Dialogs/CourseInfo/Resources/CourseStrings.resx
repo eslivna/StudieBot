@@ -120,4 +120,7 @@
   <data name="COURSE_YEAR_SEM" xml:space="preserve">
     <value />
   </data>
+  <data name="HINTS" xml:space="preserve">
+    <value />
+  </data>
 </root>

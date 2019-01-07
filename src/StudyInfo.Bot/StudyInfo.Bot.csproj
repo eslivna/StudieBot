@@ -34,10 +34,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StudyInfo.Logic\StudyInfo.Logic.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Dialogs\Cancel\Resources\CancelStrings.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -48,15 +44,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>CourseStrings.resx</DependentUpon>
     </Compile>
-    <Compile Update="Dialogs\EndConversation\Resources\EndConversationStrings.Designer.cs">
+    <Compile Update="Dialogs\AskCatalogus\Resources\AskCatalogusStrings.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>EndConversationStrings.resx</DependentUpon>
-    </Compile>
-    <Compile Update="Dialogs\EnrolmentFee\Resources\EnrolmentFeeStrings.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>EnrolmentFeeStrings.resx</DependentUpon>
+      <DependentUpon>AskCatalogusStrings.resx</DependentUpon>
     </Compile>
     <Compile Update="Dialogs\Escalate\Resources\EscalateString.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -80,13 +71,9 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>CourseStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Dialogs\EndConversation\Resources\EndConversationStrings.resx">
+    <EmbeddedResource Update="Dialogs\AskCatalogus\Resources\AskCatalogusStrings.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>EndConversationStrings.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Dialogs\EnrolmentFee\Resources\EnrolmentFeeStrings.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>EnrolmentFeeStrings.Designer.cs</LastGenOutput>
+      <LastGenOutput>AskCatalogusStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Dialogs\Escalate\Resources\EscalateString.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -106,5 +93,13 @@
 
   <ItemGroup>
     <None Include="Dialogs\Escalate\Resources\EscalateString.nl.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dialogs\CourseContent\Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StudyInfo.Logic\StudyInfo.Logic.csproj" />
   </ItemGroup>
 </Project>

@@ -120,4 +120,7 @@
   <data name="COURSE_YEAR_SEM" xml:space="preserve">
     <value>In het {0}ste jaar / {1}de semester worden er {2} vakken gegeven. Namelijk: &lt;br&gt; {3}</value>
   </data>
+  <data name="HINTS" xml:space="preserve">
+    <value>Toffe vakken, niet ? :D &lt;br&gt;Als je iets wilt weten over een bepaald vak, vraag maar! Ik weet namelijk veel over de inhoud van bepaalde vakken, wie de docenten zijn en hoeveel studietijd je moet rekenen voor elk vak :)</value>
+  </data>
 </root>

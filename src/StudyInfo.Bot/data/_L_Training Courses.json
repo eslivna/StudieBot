@@ -1,0 +1,790 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "Training Courses",
+  "desc": "",
+  "culture": "nl-nl",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "Cancel"
+    },
+    {
+      "name": "Escalate"
+    },
+    {
+      "name": "Get Enrolment Fee"
+    },
+    {
+      "name": "Get Name Teacher"
+    },
+    {
+      "name": "Get Number Of Credits"
+    },
+    {
+      "name": "Get Study Time"
+    },
+    {
+      "name": "GetAllCourses"
+    },
+    {
+      "name": "Help"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "Course",
+      "subLists": [
+        {
+          "canonicalForm": "Computerarchitectuur",
+          "list": []
+        },
+        {
+          "canonicalForm": "Computernetwerken I",
+          "list": [
+            "computernetwerken 1",
+            "computernetwerken"
+          ]
+        },
+        {
+          "canonicalForm": "OO Programmeren I",
+          "list": [
+            "programmeren 1",
+            "programmeren"
+          ]
+        },
+        {
+          "canonicalForm": "Analyse I",
+          "list": [
+            "analyse 1",
+            "analyse1",
+            "analyse"
+          ]
+        },
+        {
+          "canonicalForm": "OO Ontwerpen I",
+          "list": [
+            "ontwerpen 1",
+            "ontwerpen"
+          ]
+        },
+        {
+          "canonicalForm": "Databanken I",
+          "list": [
+            "databanken 1",
+            "databanken"
+          ]
+        },
+        {
+          "canonicalForm": "Webapplicaites I",
+          "list": [
+            "webapplicaties 1",
+            "webapplicaties"
+          ]
+        },
+        {
+          "canonicalForm": "Partim Financieel Management",
+          "list": [
+            "financieel management"
+          ]
+        },
+        {
+          "canonicalForm": "Partim Strategisch Management",
+          "list": [
+            "strategisch management"
+          ]
+        },
+        {
+          "canonicalForm": "Math4IT",
+          "list": [
+            "Wiskunde"
+          ]
+        },
+        {
+          "canonicalForm": "Probleemoplossend denken I",
+          "list": [
+            "Probleemoplossend denken 1"
+          ]
+        },
+        {
+          "canonicalForm": "Internationale Communicatie I",
+          "list": [
+            "Internationale Communicatie 1"
+          ]
+        },
+        {
+          "canonicalForm": "I1Talent",
+          "list": []
+        },
+        {
+          "canonicalForm": "Projecten-workshops I",
+          "list": [
+            "Projecten-workshops 1"
+          ]
+        },
+        {
+          "canonicalForm": "OO Programmeren II",
+          "list": [
+            "OO Programmeren 2",
+            "programmeren 2"
+          ]
+        },
+        {
+          "canonicalForm": "Webapplicaties II",
+          "list": [
+            "Webapplicaties 2"
+          ]
+        },
+        {
+          "canonicalForm": "Bedrijfsmanagement",
+          "list": []
+        },
+        {
+          "canonicalForm": "IT2Business",
+          "list": []
+        },
+        {
+          "canonicalForm": "Analyse II",
+          "list": [
+            "analyse 2"
+          ]
+        },
+        {
+          "canonicalForm": "Onderzoekstechnieken",
+          "list": []
+        },
+        {
+          "canonicalForm": "Probleemoplossend denken II",
+          "list": [
+            "PODII",
+            "pod2",
+            "probleemoplossend denken 2"
+          ]
+        },
+        {
+          "canonicalForm": "Databanken II",
+          "list": [
+            "databanken 2"
+          ]
+        },
+        {
+          "canonicalForm": "Besturingssystemen",
+          "list": []
+        },
+        {
+          "canonicalForm": "Internationale Communicatie II",
+          "list": [
+            "internationale communicatie 2"
+          ]
+        },
+        {
+          "canonicalForm": "i²Talent",
+          "list": [
+            "I 2 Talent",
+            "I2Talent"
+          ]
+        },
+        {
+          "canonicalForm": "OO Programmeren III",
+          "list": [
+            "prgrammeren 3"
+          ]
+        },
+        {
+          "canonicalForm": "Webapplicaties IV",
+          "list": [
+            "webapplicaties 4",
+            "webapps 4"
+          ]
+        },
+        {
+          "canonicalForm": "OO Ontwerpen II",
+          "list": [
+            "ontwerpen 2"
+          ]
+        },
+        {
+          "canonicalForm": "OO Ontwerpen III",
+          "list": [
+            "ontwerpen 3"
+          ]
+        },
+        {
+          "canonicalForm": "Webapplicaties III",
+          "list": [
+            "webapps 3",
+            "webapplicaties 3"
+          ]
+        },
+        {
+          "canonicalForm": "Projecten-workshops II: Programmeren",
+          "list": [
+            "projecten 2",
+            "projecten 2 programmeren"
+          ]
+        },
+        {
+          "canonicalForm": "Computernetwerken II",
+          "list": [
+            "computernetwerken 2",
+            "computernetwerken"
+          ]
+        },
+        {
+          "canonicalForm": "Computernetwerken III",
+          "list": [
+            "computernetwerken 3",
+            "computernetwerken"
+          ]
+        },
+        {
+          "canonicalForm": "Projecten-workshops II: Systeembeheer",
+          "list": [
+            "projecten 2",
+            "projecten 2 systeembeheer"
+          ]
+        },
+        {
+          "canonicalForm": "Analyse III",
+          "list": [
+            "analyse 3"
+          ]
+        },
+        {
+          "canonicalForm": "Databanken III",
+          "list": [
+            "databanken 3"
+          ]
+        },
+        {
+          "canonicalForm": "Internationale Communicatie III",
+          "list": [
+            "internationale communicatie 3",
+            "talen 3"
+          ]
+        },
+        {
+          "canonicalForm": "Artificiële Intelligentie",
+          "list": [
+            "AI"
+          ]
+        },
+        {
+          "canonicalForm": "Native apps I",
+          "list": [
+            "android"
+          ]
+        },
+        {
+          "canonicalForm": "Native apps II: mobile apps voor Windows",
+          "list": [
+            "windows"
+          ]
+        },
+        {
+          "canonicalForm": "Native apps II: mobile apps voor iOS",
+          "list": [
+            "ios",
+            "iphone applicaties"
+          ]
+        },
+        {
+          "canonicalForm": "Web apps",
+          "list": [
+            "webapps"
+          ]
+        },
+        {
+          "canonicalForm": "Project III: Mobile apps",
+          "list": [
+            "projecten 3 mobile aps"
+          ]
+        },
+        {
+          "canonicalForm": "Enterprise Linux",
+          "list": []
+        },
+        {
+          "canonicalForm": "Windows Server",
+          "list": []
+        },
+        {
+          "canonicalForm": "Computernetwerken IV",
+          "list": [
+            "computernetwerken 4",
+            "computernetwerken"
+          ]
+        },
+        {
+          "canonicalForm": "Project III: Systeembeheer",
+          "list": [
+            "projecten 3 systeembeheer"
+          ]
+        },
+        {
+          "canonicalForm": "Inleiding Mainframe",
+          "list": []
+        },
+        {
+          "canonicalForm": "Mainframe systeembeheer",
+          "list": []
+        },
+        {
+          "canonicalForm": "Databanken en transactiesystemen",
+          "list": []
+        },
+        {
+          "canonicalForm": "Batchapplicaties",
+          "list": []
+        },
+        {
+          "canonicalForm": "Business Intelligence & Big Data",
+          "list": [
+            "BI",
+            "Big Data"
+          ]
+        },
+        {
+          "canonicalForm": "e-commerce",
+          "list": []
+        },
+        {
+          "canonicalForm": "Business Software",
+          "list": []
+        },
+        {
+          "canonicalForm": "Project III: e-Business",
+          "list": [
+            "projecten 3 e-business"
+          ]
+        },
+        {
+          "canonicalForm": "Stage",
+          "list": []
+        },
+        {
+          "canonicalForm": "Bachelorproef",
+          "list": []
+        },
+        {
+          "canonicalForm": "i³Talent",
+          "list": [
+            "I3talent",
+            "I 3 Talent"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "Semester",
+      "subLists": [
+        {
+          "canonicalForm": "1",
+          "list": [
+            "1ste semester",
+            "eerste semester",
+            "semester 1",
+            "1 semester",
+            "1ste sem"
+          ]
+        },
+        {
+          "canonicalForm": "2",
+          "list": [
+            "2de semester",
+            "tweede semester",
+            "semester 2",
+            "2semester",
+            "2de sem"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "Year",
+      "subLists": [
+        {
+          "canonicalForm": "1",
+          "list": [
+            "1ste jaar",
+            "eerste jaar",
+            "jaar 1"
+          ]
+        },
+        {
+          "canonicalForm": "2",
+          "list": [
+            "2de jaar",
+            "tweede jaar",
+            "jaar 2"
+          ]
+        },
+        {
+          "canonicalForm": "3",
+          "list": [
+            "3de jaar",
+            "derde jaar",
+            "jaar 3"
+          ]
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "1ste semester 2de jaar",
+      "intent": "GetAllCourses",
+      "entities": []
+    },
+    {
+      "text": "2de jaar 1ste semester",
+      "intent": "GetAllCourses",
+      "entities": []
+    },
+    {
+      "text": "alle curussen van het 2de jaar",
+      "intent": "GetAllCourses",
+      "entities": []
+    },
+    {
+      "text": "alle vakken 1ste jaar",
+      "intent": "GetAllCourses",
+      "entities": []
+    },
+    {
+      "text": "alle vakken 3de jaar",
+      "intent": "GetAllCourses",
+      "entities": []
+    },
+    {
+      "text": "annuleer",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "cancel",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "contacteer hogent",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "cursussen 2de jaar",
+      "intent": "GetAllCourses",
+      "entities": []
+    },
+    {
+      "text": "docent wiskunde",
+      "intent": "Get Name Teacher",
+      "entities": []
+    },
+    {
+      "text": "ga weg",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "gewicht analyse 1",
+      "intent": "Get Number Of Credits",
+      "entities": []
+    },
+    {
+      "text": "gewicht wiskunde",
+      "intent": "Get Number Of Credits",
+      "entities": []
+    },
+    {
+      "text": "graag een echt persoon",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "hoe doe ik dit",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "hoe kan ik aan hulp geraken",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "hoelang moet ik studeren voor analyse 1",
+      "intent": "Get Study Time",
+      "entities": []
+    },
+    {
+      "text": "hoeveel bedraagt het inschrijvingsgeld ?",
+      "intent": "Get Enrolment Fee",
+      "entities": []
+    },
+    {
+      "text": "hoeveel ga ik moeten studeren voor wiskunde ?",
+      "intent": "Get Study Time",
+      "entities": []
+    },
+    {
+      "text": "hoeveel is het inschrijvingsgeld ?",
+      "intent": "Get Enrolment Fee",
+      "entities": []
+    },
+    {
+      "text": "hoeveel kost de opleiding",
+      "intent": "Get Enrolment Fee",
+      "entities": []
+    },
+    {
+      "text": "hoeveel moet ik betalen ?",
+      "intent": "Get Enrolment Fee",
+      "entities": []
+    },
+    {
+      "text": "hoeveel moet ik voor de opleiding betalen ?",
+      "intent": "Get Enrolment Fee",
+      "entities": []
+    },
+    {
+      "text": "hoeveel studiepunten heeft het vak analyse i ?",
+      "intent": "Get Number Of Credits",
+      "entities": []
+    },
+    {
+      "text": "hoeveel tijd moet ik studeren voor wiskunde",
+      "intent": "Get Study Time",
+      "entities": []
+    },
+    {
+      "text": "hoeveel tijd moet ik voorzien voor wiskunde ?",
+      "intent": "Get Study Time",
+      "entities": []
+    },
+    {
+      "text": "hoeveel uren heb ik nodig om het analyse1 te begrijpen",
+      "intent": "Get Study Time",
+      "entities": []
+    },
+    {
+      "text": "ik heb assistentie nodig",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "ik heb wat hulp nodig",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "ik wil alle vakken van het eerste semester weten",
+      "intent": "GetAllCourses",
+      "entities": []
+    },
+    {
+      "text": "ik wil een overzicht van alle vakken",
+      "intent": "GetAllCourses",
+      "entities": []
+    },
+    {
+      "text": "ik wil een overzicht van alle vakken van het eerste jaar",
+      "intent": "GetAllCourses",
+      "entities": []
+    },
+    {
+      "text": "ik wil graag een overzicht van alle vakken in de 2de semester",
+      "intent": "GetAllCourses",
+      "entities": []
+    },
+    {
+      "text": "ik wil met een echte persoon praten",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "is er een docent waarmee ik kan praten?",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "is er een leerkracht beschikbaar om mee te praten ?",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "is studeren aan hogent duur ?",
+      "intent": "Get Enrolment Fee",
+      "entities": []
+    },
+    {
+      "text": "kan een medewerker van hogent mij helpen ?",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "kan iemand mij helpen",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "kan ik een docent spreken ?",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "kan ik iemand van het secretariaat spreken?",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "kan ik wiskunde studeren op 10 uur ?",
+      "intent": "Get Study Time",
+      "entities": []
+    },
+    {
+      "text": "laat maar",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "leerkracht math4it",
+      "intent": "Get Name Teacher",
+      "entities": []
+    },
+    {
+      "text": "lesgever computernetwerken",
+      "intent": "Get Name Teacher",
+      "entities": []
+    },
+    {
+      "text": "stop",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "stop applicatie",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "stop bot",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "studiegeld ?",
+      "intent": "Get Enrolment Fee",
+      "entities": []
+    },
+    {
+      "text": "studiekosten ?",
+      "intent": "Get Enrolment Fee",
+      "entities": []
+    },
+    {
+      "text": "studiepunten computerarchitectuur?",
+      "intent": "Get Number Of Credits",
+      "entities": []
+    },
+    {
+      "text": "vakken 2de jaar",
+      "intent": "GetAllCourses",
+      "entities": []
+    },
+    {
+      "text": "vakken eerste semester",
+      "intent": "GetAllCourses",
+      "entities": []
+    },
+    {
+      "text": "wat is de studieomvang van probleemoplossend denken 1?",
+      "intent": "Get Number Of Credits",
+      "entities": []
+    },
+    {
+      "text": "wat is het gewicht van analyse1",
+      "intent": "Get Number Of Credits",
+      "entities": []
+    },
+    {
+      "text": "wat zijn de studiekosten ?",
+      "intent": "Get Enrolment Fee",
+      "entities": []
+    },
+    {
+      "text": "welke docent geeft oo programmeren i ?",
+      "intent": "Get Name Teacher",
+      "entities": []
+    },
+    {
+      "text": "welke docent krijg ik voor het vak wiskunde ?",
+      "intent": "Get Name Teacher",
+      "entities": []
+    },
+    {
+      "text": "welke leerkracht geeft het vak wiskunde ?",
+      "intent": "Get Name Teacher",
+      "entities": []
+    },
+    {
+      "text": "welke leerkracht geeft math4it ?",
+      "intent": "Get Name Teacher",
+      "entities": []
+    },
+    {
+      "text": "welke vakken 1ste semester derde jaar ?",
+      "intent": "GetAllCourses",
+      "entities": []
+    },
+    {
+      "text": "welke vakken worden er gegeven in het eerste semester van het tweede jaar ?",
+      "intent": "GetAllCourses",
+      "entities": []
+    },
+    {
+      "text": "wie geeft de cursus wiskunde ?",
+      "intent": "Get Name Teacher",
+      "entities": []
+    },
+    {
+      "text": "wie geeft het vak wiskunde ?",
+      "intent": "Get Name Teacher",
+      "entities": []
+    },
+    {
+      "text": "wie geeft math4it ?",
+      "intent": "Get Name Teacher",
+      "entities": []
+    },
+    {
+      "text": "wie is de lesgever van wiskunde ?",
+      "intent": "Get Name Teacher",
+      "entities": []
+    },
+    {
+      "text": "wie kan er mij helpen",
+      "intent": "Help",
+      "entities": []
+    }
+  ],
+  "settings": []
+}

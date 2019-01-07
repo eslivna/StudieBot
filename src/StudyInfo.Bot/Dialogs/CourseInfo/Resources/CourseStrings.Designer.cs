@@ -68,5 +68,14 @@ namespace StudyInfo.Bot.Dialogs.CourseInfo.Resources {
                 return ResourceManager.GetString("COURSE_YEAR_SEM", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string HINTS {
+            get {
+                return ResourceManager.GetString("HINTS", resourceCulture);
+            }
+        }
     }
 }
