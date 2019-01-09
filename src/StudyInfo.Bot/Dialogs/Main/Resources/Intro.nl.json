@@ -1,33 +1,32 @@
 ﻿{
-  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "actions": [
+    {
+      "data": "Vakken van het 1ste semester",
+      "title": "Vakken van het 1ste semester",
+      "type": "Action.Submit"
+    },
+    {
+      "data": "Vakken van het 2de semeste",
+      "title": "Vakken van het 2de semester",
+      "type": "Action.Submit"
+    },
+    {
+      "data": "Meer informatie over het inschrijvingsgeld",
+      "title": "Meer informatie over het inschrijvingsgeld",
+      "type": "Action.Submit"
+    }
+  ],
   "body": [
     {
-      "type": "TextBlock",
+      "size": "Large",
       "spacing": "Medium",
-      "size":  "Large",
-      "weight": "Bolder",
       "text": "Over wat zou je graag meer informatie hebben?",
+      "type": "TextBlock",
+      "weight": "Bolder",
       "wrap": true
     }
   ],
-  "actions": [
-    {
-      "type": "Action.Submit",
-      "title": "Vakken 1ste semester",
-      "data":  "Vakken 1ste semester"
-    },
-    {
-      "type": "Action.Submit",
-      "title": "Vakken 2de semester",
-      "data":  "Vakken 2de semeste"
-    },
-    {
-      "type": "Action.Submit",
-      "title": "Meer informatie over het inschrijvingsgeld",
-      "data":  "Meer informatie over het inschrijvingsgeld"
-    }
-  ],
-  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-  "version": "1.0",
-  "speak": "<speak><s>Now that you have successfully run your bot, follow the links in this Adaptive Card to expand your knowledge of Bot Framework.</s></speak>"
+  "type": "AdaptiveCard",
+  "version": "1.0"
 }

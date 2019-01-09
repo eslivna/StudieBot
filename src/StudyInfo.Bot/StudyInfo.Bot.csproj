@@ -44,11 +44,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>CourseStrings.resx</DependentUpon>
     </Compile>
-    <Compile Update="Dialogs\AskCatalogus\Resources\AskCatalogusStrings.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>AskCatalogusStrings.resx</DependentUpon>
-    </Compile>
     <Compile Update="Dialogs\Escalate\Resources\EscalateString.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -70,10 +65,6 @@
     <EmbeddedResource Update="Dialogs\CourseInfo\Resources\CourseStrings.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>CourseStrings.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Dialogs\AskCatalogus\Resources\AskCatalogusStrings.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>AskCatalogusStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Dialogs\Escalate\Resources\EscalateString.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
