@@ -48,9 +48,7 @@ namespace StudyInfo.Bot.StudyInfo
                 _services.TelemetryClient.TrackTrace($"Timeout in {turnContext.Activity.ChannelId} channel: Bot took too long to respond.");
                 return;
             }
-
             var dc = await _dialogs.CreateContextAsync(turnContext);
-
             if (dc.ActiveDialog != null)
             {
                 var result = await dc.ContinueDialogAsync();

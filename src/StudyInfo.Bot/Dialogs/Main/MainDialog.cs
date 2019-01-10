@@ -35,7 +35,8 @@ namespace StudyInfo.Bot.Dialogs.Dispatcher
         private readonly IStatePropertyAccessor<CourseInfoState> _courseAccessor;
         private MainResponses _responder = new MainResponses();
 
-        public MainDialog(BotServices services, ConversationState conversationState, UserState userState, IDatabaseService databaseService, IBotTelemetryClient telemetryClient)
+        public MainDialog(BotServices services, ConversationState conversationState, UserState userState, 
+            IDatabaseService databaseService)
             : base(nameof(MainDialog))
         {
             _services = services ?? throw new ArgumentNullException(nameof(services));
@@ -45,7 +46,6 @@ namespace StudyInfo.Bot.Dialogs.Dispatcher
             _userProfileAccessor = conversationState.CreateProperty<UserProfile>(nameof(UserProfile));
             _courseAccessor = conversationState.CreateProperty<CourseInfoState>(nameof(CourseInfoState));
             _userState = userState;
-            TelemetryClient = telemetryClient;
 
             AddDialog(new EscalateDialog(_services, _databaseService));
             AddDialog(new TeacherDialog(_services, _databaseService));
@@ -64,7 +64,6 @@ namespace StudyInfo.Bot.Dialogs.Dispatcher
         protected override async Task RouteAsync(DialogContext dc, CancellationToken cancellationToken = default(CancellationToken))
         {
             _courseState = await _courseAccessor.GetAsync(dc.Context, () => new CourseInfoState());
-            // Check dispatch result
             var dispatchResult = await _services.DispatchRecognizer.RecognizeAsync<DispatchModel>(dc, true, CancellationToken.None);
             if (!string.IsNullOrEmpty(dispatchResult.AlteredText))
                 dc.Context.Activity.Text = dispatchResult.AlteredText;
@@ -140,14 +139,12 @@ namespace StudyInfo.Bot.Dialogs.Dispatcher
                                 await dc.Context.SendActivityAsync(reply, cancellationToken);
                                 break;
                             }
-
                         case CourseModel.Intent.Get_Number_Of_Credits:
                             {
                                 // send credit response
                                 await dc.BeginDialogAsync(nameof(TeacherDialog));
                                 break;
                             }
-
                         case CourseModel.Intent.Get_Study_Time:
                             {
                                 var courseEntity = await _databaseService.Get<CourseDataEntity>(_courseState.Courses[0]);

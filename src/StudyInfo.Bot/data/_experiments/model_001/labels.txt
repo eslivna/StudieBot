@@ -1,3 +1,0 @@
-Label	LabelName	Samples
-0	l_Training Courses	68
-1	q_General	14
