@@ -1,5 +1,4 @@
 
-Link to the published bot : https://studyinfobot20190111090539.azurewebsites.net/
 # StudieBot - Deploying your Bot
 
 > [!NOTE]
